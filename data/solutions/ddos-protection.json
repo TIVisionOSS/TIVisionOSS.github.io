@@ -1,0 +1,126 @@
+{
+  "hero": {
+    "title": "Enterprise DDoS Protection",
+    "description": "Shield your infrastructure from sophisticated DDoS attacks with our advanced mitigation technology powered by machine learning and real-time threat intelligence.",
+    "cta": {
+      "primary": {
+        "text": "Get started",
+        "link": "/signup"
+      },
+      "secondary": {
+        "text": "Contact sales",
+        "link": "/contact"
+      }
+    }
+  },
+  "features": [
+    {
+      "icon": "Shield",
+      "title": "Layer 7 Protection",
+      "description": "Advanced application-layer protection against sophisticated HTTP/HTTPS attacks.",
+      "benefits": [
+        "HTTP/HTTPS flood mitigation",
+        "Bot detection and filtering",
+        "Rate limiting controls",
+        "Application-layer inspection"
+      ]
+    },
+    {
+      "icon": "Globe",
+      "title": "Global Network",
+      "description": "Distributed protection across our global network of data centers.",
+      "benefits": [
+        "50+ Tbps network capacity",
+        "250+ edge locations",
+        "Anycast routing",
+        "Global load balancing"
+      ]
+    },
+    {
+      "icon": "Zap",
+      "title": "Real-time Mitigation",
+      "description": "Instant attack detection and mitigation with advanced analytics.",
+      "benefits": [
+        "Sub-second mitigation",
+        "Real-time traffic analysis",
+        "Attack pattern learning",
+        "Automated response system"
+      ]
+    },
+    {
+      "icon": "Server",
+      "title": "Infrastructure Protection",
+      "description": "Comprehensive protection for your entire infrastructure.",
+      "benefits": [
+        "DNS protection",
+        "TCP/UDP flood mitigation",
+        "Protocol validation",
+        "Volumetric attack defense"
+      ]
+    }
+  ],
+  "stats": [
+    {
+      "value": "50+ Tbps",
+      "label": "Mitigation Capacity"
+    },
+    {
+      "value": "<10ms",
+      "label": "Time to Mitigate"
+    },
+    {
+      "value": "24/7",
+      "label": "Expert Support"
+    }
+  ],
+  "testimonials": [
+    {
+      "quote": "Their DDoS protection service has been invaluable for our business. We haven't experienced any downtime since implementation.",
+      "author": "Sarah Chen",
+      "role": "CTO",
+      "company": "TechCorp Solutions"
+    },
+    {
+      "quote": "The real-time mitigation capabilities are impressive. Attacks are blocked before they can impact our services.",
+      "author": "Michael Rodriguez",
+      "role": "Security Director",
+      "company": "Global Systems Inc"
+    },
+    {
+      "quote": "Outstanding protection and excellent support team. They're always there when we need them.",
+      "author": "Emily Watson",
+      "role": "Infrastructure Lead",
+      "company": "DataFlow Networks"
+    }
+  ],
+  "features_detailed": [
+    {
+      "title": "Advanced Traffic Analysis",
+      "description": "Our machine learning algorithms analyze traffic patterns in real-time to detect and block malicious requests while allowing legitimate traffic to flow smoothly.",
+      "capabilities": [
+        "Pattern recognition",
+        "Behavioral analysis",
+        "Traffic profiling",
+        "Anomaly detection"
+      ]
+    },
+    {
+      "title": "Flexible Deployment Options",
+      "description": "Choose from multiple deployment options to best suit your infrastructure needs and security requirements.",
+      "capabilities": [
+        "Always-on protection",
+        "On-demand mitigation",
+        "Hybrid deployment",
+        "Cloud integration"
+      ]
+    }
+  ],
+  "cta": {
+    "title": "Ready to protect your infrastructure?",
+    "description": "Get started with our DDoS protection services today and keep your business online, no matter the threat.",
+    "button": {
+      "text": "Start your free trial",
+      "link": "/signup"
+    }
+  }
+}

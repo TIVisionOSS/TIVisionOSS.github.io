@@ -1,0 +1,125 @@
+{
+  "logo": {
+    "icon": "Shield",
+    "text": "Tonmoy I&V"
+  },
+  "description": "Securing and accelerating the internet for businesses worldwide with enterprise-grade infrastructure and security solutions.",
+  "columns": [
+    {
+      "title": "Solutions",
+      "links": [
+        {
+          "text": "DDoS Protection",
+          "href": "/solutions/ddos-protection"
+        },
+        {
+          "text": "DNS Management",
+          "href": "/solutions/dns-management"
+        },
+        {
+          "text": "Web Security",
+          "href": "/solutions/web-security"
+        },
+        {
+          "text": "Cloud Migration",
+          "href": "/solutions/cloud-migration"
+        },
+        {
+          "text": "Performance",
+          "href": "/solutions/performance"
+        }
+      ]
+    },
+    {
+      "title": "Products",
+      "links": [
+        {
+          "text": "Cloud Hosting",
+          "href": "/products/cloud-hosting"
+        },
+        {
+          "text": "SSL Certificates",
+          "href": "/products/ssl-certificates"
+        },
+        {
+          "text": "CDN",
+          "href": "/products/cdn"
+        },
+        {
+          "text": "Database Services",
+          "href": "/products/database-services"
+        },
+        {
+          "text": "AI Services",
+          "href": "/products/ai-services"
+        }
+      ]
+    },
+    {
+      "title": "Company",
+      "links": [
+        {
+          "text": "About",
+          "href": "/about"
+        },
+        {
+          "text": "Partners",
+          "href": "/partners"
+        },
+        {
+          "text": "Resources",
+          "href": "/resources"
+        },
+        {
+          "text": "Contact",
+          "href": "/contact"
+        },
+        {
+          "text": "Book Appointment",
+          "href": "/appointment"
+        }
+      ]
+    },
+    {
+      "title": "Legal",
+      "links": [
+        {
+          "text": "Privacy Policy",
+          "href": "/privacy"
+        },
+        {
+          "text": "Terms of Service",
+          "href": "/terms"
+        },
+        {
+          "text": "Cookie Policy",
+          "href": "/cookies"
+        },
+        {
+          "text": "Security",
+          "href": "/security"
+        }
+      ]
+    }
+  ],
+  "social": {
+    "title": "Follow Us",
+    "links": [
+      {
+        "icon": "Twitter",
+        "href": "https://twitter.com/tonmoyiv"
+      },
+      {
+        "icon": "Linkedin",
+        "href": "https://linkedin.com/company/tonmoyiv"
+      },
+      {
+        "icon": "Github",
+        "href": "https://github.com/tonmoyiv"
+      }
+    ]
+  },
+  "copyright": {
+    "text": "© {year} Tonmoy Infrastructure & Vision. All rights reserved."
+  }
+}

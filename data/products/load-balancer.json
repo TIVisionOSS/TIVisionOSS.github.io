@@ -1,0 +1,84 @@
+{
+  "hero": {
+    "title": "Enterprise Load Balancer",
+    "description": "Distribute traffic intelligently across your infrastructure with our advanced global load balancing solutions.",
+    "cta": {
+      "primary": {
+        "text": "Get started",
+        "link": "/signup"
+      },
+      "secondary": {
+        "text": "Contact sales",
+        "link": "/contact"
+      }
+    }
+  },
+  "features": [
+    {
+      "icon": "Server",
+      "title": "Global Load Distribution",
+      "description": "Intelligent traffic distribution across multiple data centers worldwide.",
+      "benefits": [
+        "Geographic routing",
+        "Health monitoring",
+        "Automatic failover",
+        "Load-aware distribution"
+      ]
+    },
+    {
+      "icon": "Shield",
+      "title": "Advanced Security",
+      "description": "Built-in security features to protect your infrastructure.",
+      "benefits": [
+        "DDoS protection",
+        "SSL/TLS termination",
+        "WAF integration",
+        "Access controls"
+      ]
+    },
+    {
+      "icon": "Zap",
+      "title": "High Performance",
+      "description": "Optimized performance with smart routing algorithms.",
+      "benefits": [
+        "Low latency routing",
+        "TCP optimization",
+        "Connection pooling",
+        "Session persistence"
+      ]
+    },
+    {
+      "icon": "Network",
+      "title": "Network Intelligence",
+      "description": "Smart network optimization and routing capabilities.",
+      "benefits": [
+        "Intelligent routing",
+        "Traffic shaping",
+        "Protocol optimization",
+        "Real-time adaptation"
+      ]
+    }
+  ],
+  "stats": [
+    {
+      "value": "99.999%",
+      "label": "Uptime SLA"
+    },
+    {
+      "value": "<10ms",
+      "label": "Latency"
+    },
+    {
+      "value": "24/7",
+      "label": "Expert Support"
+    }
+  ],
+  "cta": {
+    "title": "Ready to optimize your traffic distribution?",
+    "description": "Get started with our enterprise load balancing solutions and ensure optimal performance for your applications.",
+    "button": {
+      "text": "Start your free trial",
+      "link": "/signup"
+    }
+  }
+}

@@ -1,0 +1,84 @@
+{
+  "hero": {
+    "title": "Enterprise DNS Services",
+    "description": "Fast, reliable, and secure DNS infrastructure with global availability and advanced features for mission-critical applications.",
+    "cta": {
+      "primary": {
+        "text": "Get started",
+        "link": "/signup"
+      },
+      "secondary": {
+        "text": "Contact sales",
+        "link": "/contact"
+      }
+    }
+  },
+  "features": [
+    {
+      "icon": "Globe",
+      "title": "Global DNS Network",
+      "description": "Lightning-fast DNS resolution through our worldwide network of servers.",
+      "benefits": [
+        "250+ edge locations",
+        "Automatic failover",
+        "Load balancing",
+        "Geographic routing"
+      ]
+    },
+    {
+      "icon": "Shield",
+      "title": "Advanced Security",
+      "description": "Protect your DNS infrastructure from attacks and threats.",
+      "benefits": [
+        "DNSSEC support",
+        "DDoS protection",
+        "DNS filtering",
+        "Threat monitoring"
+      ]
+    },
+    {
+      "icon": "Zap",
+      "title": "High Performance",
+      "description": "Optimized DNS resolution for maximum speed and reliability.",
+      "benefits": [
+        "Low latency",
+        "Query optimization",
+        "Caching",
+        "Traffic steering"
+      ]
+    },
+    {
+      "icon": "Lock",
+      "title": "Enterprise Controls",
+      "description": "Advanced management tools for enterprise DNS needs.",
+      "benefits": [
+        "Access control",
+        "API integration",
+        "Analytics",
+        "Custom records"
+      ]
+    }
+  ],
+  "stats": [
+    {
+      "value": "99.999%",
+      "label": "Uptime SLA"
+    },
+    {
+      "value": "<10ms",
+      "label": "Response Time"
+    },
+    {
+      "value": "250+",
+      "label": "Global Locations"
+    }
+  ],
+  "cta": {
+    "title": "Ready to optimize your DNS infrastructure?",
+    "description": "Get started with our enterprise DNS services and experience unmatched performance and reliability.",
+    "button": {
+      "text": "Start your free trial",
+      "link": "/signup"
+    }
+  }
+}

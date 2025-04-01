@@ -1,0 +1,84 @@
+{
+  "hero": {
+    "title": "Enterprise Load Balancing",
+    "description": "Distribute traffic intelligently across your infrastructure with our advanced global load balancing solutions.",
+    "cta": {
+      "primary": {
+        "text": "Get started",
+        "link": "/signup"
+      },
+      "secondary": {
+        "text": "Contact sales",
+        "link": "/contact"
+      }
+    }
+  },
+  "features": [
+    {
+      "icon": "Server",
+      "title": "Global Load Distribution",
+      "description": "Intelligent traffic distribution across multiple data centers worldwide.",
+      "benefits": [
+        "Geographic routing",
+        "Health monitoring",
+        "Automatic failover",
+        "Load-aware distribution"
+      ]
+    },
+    {
+      "icon": "Network",
+      "title": "Protocol Support",
+      "description": "Comprehensive protocol support for all types of applications.",
+      "benefits": [
+        "TCP/UDP load balancing",
+        "HTTP/HTTPS routing",
+        "WebSocket support",
+        "gRPC compatibility"
+      ]
+    },
+    {
+      "icon": "Shield",
+      "title": "Health Checks",
+      "description": "Advanced health monitoring and automatic failover.",
+      "benefits": [
+        "Custom health probes",
+        "Automated recovery",
+        "Real-time monitoring",
+        "Failure prediction"
+      ]
+    },
+    {
+      "icon": "Zap",
+      "title": "Performance Optimization",
+      "description": "Smart routing algorithms for optimal performance.",
+      "benefits": [
+        "Latency-based routing",
+        "Session persistence",
+        "Traffic shaping",
+        "Rate limiting"
+      ]
+    }
+  ],
+  "stats": [
+    {
+      "value": "99.999%",
+      "label": "Service Uptime"
+    },
+    {
+      "value": "<10ms",
+      "label": "Failover Time"
+    },
+    {
+      "value": "250+",
+      "label": "Global PoPs"
+    }
+  ],
+  "cta": {
+    "title": "Ready to optimize your traffic distribution?",
+    "description": "Join thousands of enterprises that trust our load balancing solutions for their critical infrastructure.",
+    "button": {
+      "text": "Start your free trial",
+      "link": "/signup"
+    }
+  }
+}

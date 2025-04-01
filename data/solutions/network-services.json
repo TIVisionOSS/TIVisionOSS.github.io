@@ -1,0 +1,84 @@
+{
+  "hero": {
+    "title": "Enterprise Network Services",
+    "description": "Advanced networking solutions designed for modern enterprises, from secure VPNs to software-defined networking.",
+    "cta": {
+      "primary": {
+        "text": "Get started",
+        "link": "/signup"
+      },
+      "secondary": {
+        "text": "Contact sales",
+        "link": "/contact"
+      }
+    }
+  },
+  "features": [
+    {
+      "icon": "Network",
+      "title": "Private Networks",
+      "description": "Secure and reliable private network solutions for your enterprise.",
+      "benefits": [
+        "Global VPN infrastructure",
+        "MPLS network support",
+        "SD-WAN capabilities",
+        "Zero-trust security"
+      ]
+    },
+    {
+      "icon": "Globe",
+      "title": "Global Connectivity",
+      "description": "Connect your infrastructure across regions with optimal performance.",
+      "benefits": [
+        "Global route optimization",
+        "Traffic acceleration",
+        "Bandwidth management",
+        "Quality of Service (QoS)"
+      ]
+    },
+    {
+      "icon": "Shield",
+      "title": "Network Security",
+      "description": "Comprehensive security measures to protect your network infrastructure.",
+      "benefits": [
+        "DDoS protection",
+        "Firewall services",
+        "Intrusion prevention",
+        "Traffic encryption"
+      ]
+    },
+    {
+      "icon": "Server",
+      "title": "Network Management",
+      "description": "Advanced tools for monitoring and managing your network infrastructure.",
+      "benefits": [
+        "Real-time monitoring",
+        "Network analytics",
+        "Configuration management",
+        "Performance optimization"
+      ]
+    }
+  ],
+  "stats": [
+    {
+      "value": "50+",
+      "label": "Countries Connected"
+    },
+    {
+      "value": "99.99%",
+      "label": "Network Uptime"
+    },
+    {
+      "value": "24/7",
+      "label": "Network Operations"
+    }
+  ],
+  "cta": {
+    "title": "Ready to transform your network infrastructure?",
+    "description": "Join leading enterprises that trust our network services for their global connectivity needs.",
+    "button": {
+      "text": "Start your free trial",
+      "link": "/signup"
+    }
+  }
+}

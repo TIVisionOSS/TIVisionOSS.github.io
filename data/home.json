@@ -1,0 +1,55 @@
+{
+  "hero": {
+    "title": "Secure and accelerate your online presence",
+    "description": "Tonmoy Infrastructure & Vision provides enterprise-grade security, performance, and reliability solutions for businesses of all sizes.",
+    "cta": {
+      "primary": {
+        "text": "Start for free",
+        "link": "/signup"
+      },
+      "secondary": {
+        "text": "View solutions",
+        "link": "/solutions"
+      }
+    }
+  },
+  "features": [
+    {
+      "icon": "Shield",
+      "title": "Advanced Security",
+      "description": "Protect your website from DDoS attacks, malware, and other cyber threats with our enterprise-grade security solutions."
+    },
+    {
+      "icon": "Globe",
+      "title": "Global DNS",
+      "description": "Fast and reliable DNS services with automatic failover and global coverage for maximum availability."
+    },
+    {
+      "icon": "Cloud",
+      "title": "Cloud Hosting",
+      "description": "Scalable and reliable cloud hosting solutions designed for performance and security."
+    }
+  ],
+  "stats": [
+    {
+      "value": "100+",
+      "label": "Enterprise Customers"
+    },
+    {
+      "value": "99.99%",
+      "label": "Uptime Guarantee"
+    },
+    {
+      "value": "24/7",
+      "label": "Expert Support"
+    }
+  ],
+  "cta": {
+    "title": "Ready to secure your online presence?",
+    "description": "Join thousands of businesses that trust Tonmoy Infrastructure & Vision for their security needs.",
+    "button": {
+      "text": "Get started today",
+      "link": "/signup"
+    }
+  }
+}

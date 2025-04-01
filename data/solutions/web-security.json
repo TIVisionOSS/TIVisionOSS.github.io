@@ -1,0 +1,84 @@
+{
+  "hero": {
+    "title": "Enterprise Web Security",
+    "description": "Protect your web applications from sophisticated threats and vulnerabilities with our comprehensive security solutions powered by advanced AI and real-time monitoring.",
+    "cta": {
+      "primary": {
+        "text": "Get started",
+        "link": "/signup"
+      },
+      "secondary": {
+        "text": "Contact sales",
+        "link": "/contact"
+      }
+    }
+  },
+  "features": [
+    {
+      "icon": "Shield",
+      "title": "WAF Protection",
+      "description": "Advanced Web Application Firewall to protect against OWASP Top 10 threats and emerging vulnerabilities.",
+      "benefits": [
+        "SQL injection and XSS prevention",
+        "Zero-day threat protection",
+        "Custom rule sets and policies",
+        "API security and rate limiting"
+      ]
+    },
+    {
+      "icon": "Lock",
+      "title": "Access Control",
+      "description": "Enterprise-grade access management and authentication solutions for secure resource access.",
+      "benefits": [
+        "Multi-factor authentication (MFA)",
+        "IP-based access controls",
+        "Role-based access control (RBAC)",
+        "Single sign-on (SSO) integration"
+      ]
+    },
+    {
+      "icon": "FileCheck",
+      "title": "SSL Management",
+      "description": "Comprehensive SSL certificate management and security for encrypted communications.",
+      "benefits": [
+        "Automated certificate deployment",
+        "HTTPS enforcement policies",
+        "TLS 1.3 protocol support",
+        "Certificate inventory management"
+      ]
+    },
+    {
+      "icon": "AlertTriangle",
+      "title": "Threat Detection",
+      "description": "AI-powered monitoring and threat detection system for proactive security.",
+      "benefits": [
+        "Real-time threat alerts",
+        "Automated malware scanning",
+        "Security analytics dashboard",
+        "Incident response automation"
+      ]
+    }
+  ],
+  "stats": [
+    {
+      "value": "100K+",
+      "label": "Threats Blocked Daily"
+    },
+    {
+      "value": "99.99%",
+      "label": "Uptime SLA"
+    },
+    {
+      "value": "<50ms",
+      "label": "Response Latency"
+    }
+  ],
+  "cta": {
+    "title": "Ready to secure your web applications?",
+    "description": "Join thousands of businesses that trust our enterprise security solutions to protect their digital assets from evolving cyber threats.",
+    "button": {
+      "text": "Start your free trial",
+      "link": "/signup"
+    }
+  }
+}

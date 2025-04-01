@@ -1,0 +1,84 @@
+{
+  "hero": {
+    "title": "Enterprise Email Security",
+    "description": "Protect your organization from email-based threats with our advanced email security and filtering solutions.",
+    "cta": {
+      "primary": {
+        "text": "Get started",
+        "link": "/signup"
+      },
+      "secondary": {
+        "text": "Contact sales",
+        "link": "/contact"
+      }
+    }
+  },
+  "features": [
+    {
+      "icon": "Mail",
+      "title": "Advanced Filtering",
+      "description": "Multi-layered email filtering with machine learning capabilities.",
+      "benefits": [
+        "Spam detection and filtering",
+        "Phishing protection",
+        "Content analysis",
+        "Custom filtering rules"
+      ]
+    },
+    {
+      "icon": "Shield",
+      "title": "Threat Protection",
+      "description": "Comprehensive protection against email-based threats and attacks.",
+      "benefits": [
+        "Malware detection",
+        "Zero-day protection",
+        "URL defense",
+        "Attachment scanning"
+      ]
+    },
+    {
+      "icon": "Lock",
+      "title": "Email Encryption",
+      "description": "Secure email communication with enterprise-grade encryption.",
+      "benefits": [
+        "End-to-end encryption",
+        "TLS enforcement",
+        "DLP integration",
+        "Secure message delivery"
+      ]
+    },
+    {
+      "icon": "Bell",
+      "title": "Monitoring & Alerts",
+      "description": "Real-time monitoring and alerting for email security events.",
+      "benefits": [
+        "Security dashboards",
+        "Threat notifications",
+        "Activity logging",
+        "Compliance reporting"
+      ]
+    }
+  ],
+  "stats": [
+    {
+      "value": "99.9%",
+      "label": "Threat Detection Rate"
+    },
+    {
+      "value": "24/7",
+      "label": "Security Monitoring"
+    },
+    {
+      "value": "100M+",
+      "label": "Emails Protected Daily"
+    }
+  ],
+  "cta": {
+    "title": "Ready to secure your email?",
+    "description": "Protect your organization from email-based threats with our enterprise security solutions.",
+    "button": {
+      "text": "Start your free trial",
+      "link": "/signup"
+    }
+  }
+}

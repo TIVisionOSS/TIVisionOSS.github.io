@@ -1,0 +1,56 @@
+{
+  "hero": {
+    "logo": {
+      "icon": "Shield",
+      "text": "Tonmoy I&V"
+    },
+    "title": "Sign in to your account",
+    "subtitle": {
+      "text": "Or",
+      "link": {
+        "text": "create a new account",
+        "href": "/signup"
+      }
+    }
+  },
+  "form": {
+    "fields": {
+      "email": {
+        "label": "Email address",
+        "type": "email",
+        "placeholder": "Enter your email",
+        "required": true,
+        "autoComplete": "email"
+      },
+      "password": {
+        "label": "Password",
+        "type": "password",
+        "placeholder": "Enter your password",
+        "required": true,
+        "autoComplete": "current-password"
+      }
+    },
+    "forgotPassword": {
+      "text": "Forgot your password?",
+      "href": "/forgot-password"
+    },
+    "button": {
+      "text": "Sign in"
+    }
+  },
+  "socialLogin": {
+    "divider": {
+      "text": "Or continue with"
+    },
+    "providers": [
+      {
+        "name": "Google",
+        "variant": "outline"
+      },
+      {
+        "name": "GitHub",
+        "variant": "outline"
+      }
+    ]
+  }
+}

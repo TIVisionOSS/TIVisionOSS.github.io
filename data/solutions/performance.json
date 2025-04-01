@@ -1,0 +1,84 @@
+{
+  "hero": {
+    "title": "Performance Optimization",
+    "description": "Accelerate your web applications with enterprise-grade performance optimization solutions powered by our global edge network.",
+    "cta": {
+      "primary": {
+        "text": "Get started",
+        "link": "/signup"
+      },
+      "secondary": {
+        "text": "Contact sales",
+        "link": "/contact"
+      }
+    }
+  },
+  "features": [
+    {
+      "icon": "Zap",
+      "title": "Edge Caching",
+      "description": "Global content delivery with intelligent caching at the edge.",
+      "benefits": [
+        "Automatic cache optimization",
+        "Smart purging capabilities",
+        "Custom cache rules",
+        "Real-time cache analytics"
+      ]
+    },
+    {
+      "icon": "Globe",
+      "title": "Global Network",
+      "description": "Distributed network of edge locations for minimal latency.",
+      "benefits": [
+        "250+ edge locations",
+        "Automatic routing optimization",
+        "Load balancing",
+        "Geographic distribution"
+      ]
+    },
+    {
+      "icon": "Server",
+      "title": "Image Optimization",
+      "description": "Real-time image optimization and delivery.",
+      "benefits": [
+        "Automatic format selection",
+        "Responsive images",
+        "Quality optimization",
+        "WebP conversion"
+      ]
+    },
+    {
+      "icon": "Network",
+      "title": "Protocol Optimization",
+      "description": "Advanced protocol optimizations for faster delivery.",
+      "benefits": [
+        "HTTP/3 support",
+        "TCP optimization",
+        "TLS 1.3",
+        "QUIC protocol"
+      ]
+    }
+  ],
+  "stats": [
+    {
+      "value": "<50ms",
+      "label": "Global Latency"
+    },
+    {
+      "value": "250+",
+      "label": "Edge Locations"
+    },
+    {
+      "value": "99.99%",
+      "label": "Availability"
+    }
+  ],
+  "cta": {
+    "title": "Ready to accelerate your applications?",
+    "description": "Join thousands of businesses that trust our performance optimization solutions for their critical infrastructure.",
+    "button": {
+      "text": "Start your free trial",
+      "link": "/signup"
+    }
+  }
+}

@@ -1,0 +1,84 @@
+{
+  "hero": {
+    "title": "Enterprise Security Suite",
+    "description": "Comprehensive security solutions to protect your infrastructure from advanced threats and vulnerabilities.",
+    "cta": {
+      "primary": {
+        "text": "Get started",
+        "link": "/signup"
+      },
+      "secondary": {
+        "text": "Contact sales",
+        "link": "/contact"
+      }
+    }
+  },
+  "features": [
+    {
+      "icon": "Shield",
+      "title": "Advanced Threat Protection",
+      "description": "Multi-layered security to protect against sophisticated cyber threats.",
+      "benefits": [
+        "DDoS mitigation",
+        "WAF protection",
+        "Bot management",
+        "Zero-day protection"
+      ]
+    },
+    {
+      "icon": "Lock",
+      "title": "Access Security",
+      "description": "Secure access control and authentication solutions.",
+      "benefits": [
+        "Multi-factor authentication",
+        "Single sign-on (SSO)",
+        "Identity management",
+        "Access policies"
+      ]
+    },
+    {
+      "icon": "AlertTriangle",
+      "title": "Threat Intelligence",
+      "description": "Real-time threat detection and response capabilities.",
+      "benefits": [
+        "24/7 monitoring",
+        "Automated responses",
+        "Threat analytics",
+        "Security alerts"
+      ]
+    },
+    {
+      "icon": "Eye",
+      "title": "Security Visibility",
+      "description": "Comprehensive visibility into security events and incidents.",
+      "benefits": [
+        "Security dashboard",
+        "Event logging",
+        "Audit trails",
+        "Compliance reporting"
+      ]
+    }
+  ],
+  "stats": [
+    {
+      "value": "100K+",
+      "label": "Threats Blocked Daily"
+    },
+    {
+      "value": "99.99%",
+      "label": "Detection Rate"
+    },
+    {
+      "value": "24/7",
+      "label": "Security Operations"
+    }
+  ],
+  "cta": {
+    "title": "Ready to secure your infrastructure?",
+    "description": "Get started with our enterprise security suite and protect your business from evolving cyber threats.",
+    "button": {
+      "text": "Start your free trial",
+      "link": "/signup"
+    }
+  }
+}

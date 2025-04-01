@@ -1,0 +1,84 @@
+{
+  "hero": {
+    "title": "DevOps Solutions",
+    "description": "Streamline your development and operations with integrated tools and automated workflows designed for modern software delivery.",
+    "cta": {
+      "primary": {
+        "text": "Get started",
+        "link": "/signup"
+      },
+      "secondary": {
+        "text": "Contact sales",
+        "link": "/contact"
+      }
+    }
+  },
+  "features": [
+    {
+      "icon": "Workflow",
+      "title": "CI/CD Pipeline",
+      "description": "Automated continuous integration and deployment pipelines.",
+      "benefits": [
+        "Automated builds",
+        "Continuous testing",
+        "Deployment automation",
+        "Pipeline analytics"
+      ]
+    },
+    {
+      "icon": "GitBranch",
+      "title": "Version Control",
+      "description": "Enterprise-grade version control and collaboration tools.",
+      "benefits": [
+        "Code repositories",
+        "Branch management",
+        "Code review workflow",
+        "Release management"
+      ]
+    },
+    {
+      "icon": "Terminal",
+      "title": "Infrastructure as Code",
+      "description": "Automated infrastructure provisioning and management.",
+      "benefits": [
+        "Infrastructure automation",
+        "Configuration management",
+        "Environment consistency",
+        "Resource optimization"
+      ]
+    },
+    {
+      "icon": "LineChart",
+      "title": "Monitoring & Analytics",
+      "description": "Comprehensive monitoring and performance analytics.",
+      "benefits": [
+        "Performance monitoring",
+        "Log aggregation",
+        "Error tracking",
+        "Real-time alerts"
+      ]
+    }
+  ],
+  "stats": [
+    {
+      "value": "80%",
+      "label": "Faster Deployments"
+    },
+    {
+      "value": "99.9%",
+      "label": "Pipeline Reliability"
+    },
+    {
+      "value": "24/7",
+      "label": "DevOps Support"
+    }
+  ],
+  "cta": {
+    "title": "Ready to modernize your development workflow?",
+    "description": "Join leading organizations that use our DevOps solutions to deliver software faster and more reliably.",
+    "button": {
+      "text": "Start your free trial",
+      "link": "/signup"
+    }
+  }
+}

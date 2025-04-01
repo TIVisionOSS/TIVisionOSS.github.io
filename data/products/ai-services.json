@@ -1,0 +1,84 @@
+{
+  "hero": {
+    "title": "AI & Machine Learning Services",
+    "description": "Enterprise-grade AI solutions powered by cutting-edge machine learning technology for intelligent automation and decision making.",
+    "cta": {
+      "primary": {
+        "text": "Get started",
+        "link": "/signup"
+      },
+      "secondary": {
+        "text": "Contact sales",
+        "link": "/contact"
+      }
+    }
+  },
+  "features": [
+    {
+      "icon": "Bot",
+      "title": "Machine Learning Models",
+      "description": "Pre-trained and custom ML models for various business applications.",
+      "benefits": [
+        "Natural language processing",
+        "Computer vision",
+        "Predictive analytics",
+        "Anomaly detection"
+      ]
+    },
+    {
+      "icon": "Brain",
+      "title": "AI Infrastructure",
+      "description": "Scalable infrastructure for AI workloads and model deployment.",
+      "benefits": [
+        "GPU acceleration",
+        "Model deployment",
+        "Auto-scaling",
+        "Resource optimization"
+      ]
+    },
+    {
+      "icon": "Workflow",
+      "title": "Intelligent Automation",
+      "description": "AI-powered automation for business processes and workflows.",
+      "benefits": [
+        "Process automation",
+        "Decision automation",
+        "Workflow optimization",
+        "Intelligent routing"
+      ]
+    },
+    {
+      "icon": "LineChart",
+      "title": "AI Analytics",
+      "description": "Advanced analytics and insights powered by artificial intelligence.",
+      "benefits": [
+        "Predictive analytics",
+        "Pattern recognition",
+        "Trend analysis",
+        "Real-time insights"
+      ]
+    }
+  ],
+  "stats": [
+    {
+      "value": "99.9%",
+      "label": "Model Accuracy"
+    },
+    {
+      "value": "<100ms",
+      "label": "Inference Time"
+    },
+    {
+      "value": "24/7",
+      "label": "AI Operations"
+    }
+  ],
+  "cta": {
+    "title": "Ready to leverage AI for your business?",
+    "description": "Start using our enterprise AI solutions to transform your operations and drive innovation.",
+    "button": {
+      "text": "Start your free trial",
+      "link": "/signup"
+    }
+  }
+}

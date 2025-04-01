@@ -1,0 +1,84 @@
+{
+  "hero": {
+    "title": "Content Delivery Network",
+    "description": "Accelerate your content delivery with our global CDN, designed for speed, reliability, and security at scale.",
+    "cta": {
+      "primary": {
+        "text": "Get started",
+        "link": "/signup"
+      },
+      "secondary": {
+        "text": "Contact sales",
+        "link": "/contact"
+      }
+    }
+  },
+  "features": [
+    {
+      "icon": "Globe",
+      "title": "Global Edge Network",
+      "description": "Lightning-fast content delivery through our worldwide network of edge servers.",
+      "benefits": [
+        "250+ edge locations",
+        "Automatic routing optimization",
+        "Global load balancing",
+        "Regional caching"
+      ]
+    },
+    {
+      "icon": "Zap",
+      "title": "Performance Optimization",
+      "description": "Advanced optimization features for maximum speed and efficiency.",
+      "benefits": [
+        "Image optimization",
+        "HTTP/3 support",
+        "Brotli compression",
+        "Smart caching"
+      ]
+    },
+    {
+      "icon": "Shield",
+      "title": "Security Features",
+      "description": "Built-in security to protect your content and users.",
+      "benefits": [
+        "DDoS protection",
+        "WAF integration",
+        "SSL/TLS encryption",
+        "Bot protection"
+      ]
+    },
+    {
+      "icon": "BarChart",
+      "title": "Analytics & Control",
+      "description": "Real-time insights and granular control over your CDN.",
+      "benefits": [
+        "Real-time analytics",
+        "Cache control",
+        "Purge capabilities",
+        "Traffic insights"
+      ]
+    }
+  ],
+  "stats": [
+    {
+      "value": "250+",
+      "label": "Edge Locations"
+    },
+    {
+      "value": "<10ms",
+      "label": "Global Latency"
+    },
+    {
+      "value": "99.99%",
+      "label": "Uptime SLA"
+    }
+  ],
+  "cta": {
+    "title": "Ready to accelerate your content delivery?",
+    "description": "Join thousands of businesses that trust our CDN for fast, reliable content delivery worldwide.",
+    "button": {
+      "text": "Start your free trial",
+      "link": "/signup"
+    }
+  }
+}

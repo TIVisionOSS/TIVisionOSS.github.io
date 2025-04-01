@@ -1,0 +1,84 @@
+{
+  "hero": {
+    "title": "Enterprise DNS Management",
+    "description": "Fast, reliable, and secure DNS infrastructure with global availability and advanced features for mission-critical applications.",
+    "cta": {
+      "primary": {
+        "text": "Get started",
+        "link": "/signup"
+      },
+      "secondary": {
+        "text": "Contact sales",
+        "link": "/contact"
+      }
+    }
+  },
+  "features": [
+    {
+      "icon": "Globe",
+      "title": "Global Anycast Network",
+      "description": "Lightning-fast DNS resolution through our global network of servers.",
+      "benefits": [
+        "250+ edge locations worldwide",
+        "Automatic failover and redundancy",
+        "Load balancing and traffic optimization",
+        "Ultra-low latency response times"
+      ]
+    },
+    {
+      "icon": "Shield",
+      "title": "Advanced Security",
+      "description": "Protect your DNS infrastructure from attacks and threats.",
+      "benefits": [
+        "DNSSEC implementation and management",
+        "DDoS protection up to 100 Tbps",
+        "DNS filtering and threat blocking",
+        "Real-time security monitoring"
+      ]
+    },
+    {
+      "icon": "Zap",
+      "title": "Performance Optimization",
+      "description": "Optimize DNS resolution for maximum speed and reliability.",
+      "benefits": [
+        "Smart routing algorithms",
+        "Query optimization and caching",
+        "Traffic steering capabilities",
+        "Performance analytics dashboard"
+      ]
+    },
+    {
+      "icon": "Network",
+      "title": "Enterprise Features",
+      "description": "Advanced DNS management tools for enterprise needs.",
+      "benefits": [
+        "Multi-user access control",
+        "API integration and automation",
+        "Advanced analytics and reporting",
+        "Custom DNS record management"
+      ]
+    }
+  ],
+  "stats": [
+    {
+      "value": "99.999%",
+      "label": "DNS Uptime"
+    },
+    {
+      "value": "<10ms",
+      "label": "Average Response Time"
+    },
+    {
+      "value": "250+",
+      "label": "Global PoPs"
+    }
+  ],
+  "cta": {
+    "title": "Ready to optimize your DNS infrastructure?",
+    "description": "Join thousands of enterprises that trust our DNS management solutions for their critical infrastructure.",
+    "button": {
+      "text": "Start your free trial",
+      "link": "/signup"
+    }
+  }
+}

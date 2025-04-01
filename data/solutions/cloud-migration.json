@@ -1,0 +1,84 @@
+{
+  "hero": {
+    "title": "Enterprise Cloud Migration",
+    "description": "Seamlessly migrate your applications and infrastructure to the cloud with our enterprise-grade migration solutions and expert guidance.",
+    "cta": {
+      "primary": {
+        "text": "Get started",
+        "link": "/signup"
+      },
+      "secondary": {
+        "text": "Contact sales",
+        "link": "/contact"
+      }
+    }
+  },
+  "features": [
+    {
+      "icon": "Cloud",
+      "title": "Migration Planning",
+      "description": "Comprehensive migration strategy and planning services.",
+      "benefits": [
+        "Infrastructure assessment",
+        "Dependency mapping",
+        "Risk analysis",
+        "Migration roadmap"
+      ]
+    },
+    {
+      "icon": "Server",
+      "title": "Workload Migration",
+      "description": "Secure and efficient workload transfer to cloud infrastructure.",
+      "benefits": [
+        "Zero-downtime migration",
+        "Data integrity checks",
+        "Performance optimization",
+        "Automated transfers"
+      ]
+    },
+    {
+      "icon": "Shield",
+      "title": "Security & Compliance",
+      "description": "Maintain security and compliance throughout migration.",
+      "benefits": [
+        "Compliance monitoring",
+        "Security assessment",
+        "Data encryption",
+        "Access controls"
+      ]
+    },
+    {
+      "icon": "Network",
+      "title": "Network Integration",
+      "description": "Seamless integration with existing network infrastructure.",
+      "benefits": [
+        "Hybrid connectivity",
+        "Network optimization",
+        "Traffic routing",
+        "DNS management"
+      ]
+    }
+  ],
+  "stats": [
+    {
+      "value": "1000+",
+      "label": "Successful Migrations"
+    },
+    {
+      "value": "99.99%",
+      "label": "Data Integrity"
+    },
+    {
+      "value": "24/7",
+      "label": "Migration Support"
+    }
+  ],
+  "cta": {
+    "title": "Ready to start your cloud journey?",
+    "description": "Let our experts help you plan and execute your cloud migration strategy.",
+    "button": {
+      "text": "Start your migration",
+      "link": "/signup"
+    }
+  }
+}

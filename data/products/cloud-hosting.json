@@ -1,0 +1,190 @@
+{
+  "hero": {
+    "title": "Enterprise Cloud Hosting",
+    "description": "Secure, scalable, and high-performance cloud infrastructure designed for mission-critical applications and enterprise workloads.",
+    "cta": {
+      "primary": {
+        "text": "Start free trial",
+        "link": "/signup"
+      },
+      "secondary": {
+        "text": "Contact sales",
+        "link": "/contact"
+      }
+    },
+    "backgroundImage": "https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&fit=crop&q=80"
+  },
+  "features": [
+    {
+      "icon": "Cloud",
+      "title": "Global Infrastructure",
+      "description": "Enterprise-grade infrastructure with worldwide availability.",
+      "benefits": [
+        "250+ edge locations",
+        "Multi-region deployment",
+        "Automatic scaling",
+        "Load balancing",
+        "99.99% uptime SLA"
+      ]
+    },
+    {
+      "icon": "Shield",
+      "title": "Advanced Security",
+      "description": "Comprehensive security features to protect your infrastructure.",
+      "benefits": [
+        "DDoS protection",
+        "SSL/TLS encryption",
+        "WAF integration",
+        "Network isolation",
+        "Security monitoring"
+      ]
+    },
+    {
+      "icon": "Zap",
+      "title": "High Performance",
+      "description": "Optimized performance for demanding enterprise workloads.",
+      "benefits": [
+        "NVMe SSD storage",
+        "High-speed networking",
+        "CPU optimization",
+        "Memory management",
+        "I/O prioritization"
+      ]
+    },
+    {
+      "icon": "Settings",
+      "title": "Management Tools",
+      "description": "Powerful tools for infrastructure management and monitoring.",
+      "benefits": [
+        "API access",
+        "Infrastructure as Code",
+        "Real-time monitoring",
+        "Resource analytics",
+        "Cost optimization"
+      ]
+    }
+  ],
+  "tiers": [
+    {
+      "name": "Standard",
+      "description": "Perfect for small to medium applications",
+      "price": "$29",
+      "unit": "per month",
+      "features": [
+        "2 vCPUs",
+        "4GB RAM",
+        "80GB SSD Storage",
+        "2TB Transfer",
+        "Basic Support"
+      ]
+    },
+    {
+      "name": "Professional",
+      "description": "Ideal for production workloads",
+      "price": "$99",
+      "unit": "per month",
+      "features": [
+        "4 vCPUs",
+        "8GB RAM",
+        "160GB SSD Storage",
+        "5TB Transfer",
+        "Priority Support"
+      ],
+      "popular": true
+    },
+    {
+      "name": "Enterprise",
+      "description": "For mission-critical applications",
+      "price": "Custom",
+      "unit": "contact sales",
+      "features": [
+        "Custom vCPUs",
+        "Custom RAM",
+        "Custom Storage",
+        "Unlimited Transfer",
+        "24/7 Enterprise Support"
+      ]
+    }
+  ],
+  "stats": [
+    {
+      "value": "99.99%",
+      "label": "Uptime SLA"
+    },
+    {
+      "value": "250+",
+      "label": "Global Locations"
+    },
+    {
+      "value": "24/7",
+      "label": "Expert Support"
+    },
+    {
+      "value": "<10ms",
+      "label": "Network Latency"
+    }
+  ],
+  "testimonials": [
+    {
+      "quote": "Moving our infrastructure to Tonmoy I&V's cloud hosting has significantly improved our application performance and reliability.",
+      "author": "David Chen",
+      "role": "CTO",
+      "company": "TechScale Solutions"
+    },
+    {
+      "quote": "The enterprise-grade security features and global availability have been game-changing for our business operations.",
+      "author": "Sarah Thompson",
+      "role": "VP of Engineering",
+      "company": "DataFlow Systems"
+    },
+    {
+      "quote": "Their support team is exceptional, and the platform's reliability has exceeded our expectations.",
+      "author": "Michael Brown",
+      "role": "Infrastructure Lead",
+      "company": "CloudFirst Technologies"
+    }
+  ],
+  "features_detailed": [
+    {
+      "title": "Compute Options",
+      "description": "Flexible compute resources to match your workload requirements",
+      "items": [
+        "General Purpose Instances",
+        "CPU Optimized Instances",
+        "Memory Optimized Instances",
+        "GPU Instances",
+        "Custom Configurations"
+      ]
+    },
+    {
+      "title": "Storage Solutions",
+      "description": "High-performance storage options for every use case",
+      "items": [
+        "NVMe SSD Storage",
+        "Block Storage",
+        "Object Storage",
+        "Automated Backups",
+        "Snapshot Management"
+      ]
+    },
+    {
+      "title": "Networking",
+      "description": "Advanced networking features for optimal connectivity",
+      "items": [
+        "Private Networks",
+        "Load Balancing",
+        "CDN Integration",
+        "DDoS Protection",
+        "IPv6 Support"
+      ]
+    }
+  ],
+  "cta": {
+    "title": "Ready to get started?",
+    "description": "Deploy your applications on our enterprise cloud platform and experience unmatched performance, security, and reliability.",
+    "button": {
+      "text": "Start your free trial",
+      "link": "/signup"
+    }
+  }
+}

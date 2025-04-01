@@ -1,0 +1,84 @@
+{
+  "hero": {
+    "title": "Enterprise Identity Management",
+    "description": "Secure and scalable identity and access management solutions for modern enterprises, with seamless integration and comprehensive security features.",
+    "cta": {
+      "primary": {
+        "text": "Get started",
+        "link": "/signup"
+      },
+      "secondary": {
+        "text": "Contact sales",
+        "link": "/contact"
+      }
+    }
+  },
+  "features": [
+    {
+      "icon": "Users",
+      "title": "User Management",
+      "description": "Comprehensive user lifecycle management and authentication.",
+      "benefits": [
+        "Single sign-on (SSO)",
+        "Multi-factor authentication",
+        "User provisioning/deprovisioning",
+        "Role-based access control"
+      ]
+    },
+    {
+      "icon": "Shield",
+      "title": "Access Control",
+      "description": "Fine-grained access control and policy management.",
+      "benefits": [
+        "Attribute-based access control",
+        "Dynamic policy enforcement",
+        "Access review workflows",
+        "Compliance reporting"
+      ]
+    },
+    {
+      "icon": "Lock",
+      "title": "Security Features",
+      "description": "Advanced security measures for identity protection.",
+      "benefits": [
+        "Passwordless authentication",
+        "Biometric authentication",
+        "Fraud detection",
+        "Security analytics"
+      ]
+    },
+    {
+      "icon": "Key",
+      "title": "Integration & APIs",
+      "description": "Seamless integration with existing systems and applications.",
+      "benefits": [
+        "REST API access",
+        "SAML/OIDC support",
+        "Directory integration",
+        "Custom workflows"
+      ]
+    }
+  ],
+  "stats": [
+    {
+      "value": "99.99%",
+      "label": "Service Uptime"
+    },
+    {
+      "value": "<100ms",
+      "label": "Auth Response Time"
+    },
+    {
+      "value": "24/7",
+      "label": "Security Monitoring"
+    }
+  ],
+  "cta": {
+    "title": "Ready to secure your enterprise identity?",
+    "description": "Join leading organizations that trust our identity management solutions for their security needs.",
+    "button": {
+      "text": "Start your free trial",
+      "link": "/signup"
+    }
+  }
+}

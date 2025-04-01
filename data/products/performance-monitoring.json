@@ -1,0 +1,84 @@
+{
+  "hero": {
+    "title": "Performance Monitoring",
+    "description": "Real-time monitoring and analytics for your infrastructure with advanced insights and alerting capabilities.",
+    "cta": {
+      "primary": {
+        "text": "Get started",
+        "link": "/signup"
+      },
+      "secondary": {
+        "text": "Contact sales",
+        "link": "/contact"
+      }
+    }
+  },
+  "features": [
+    {
+      "icon": "LineChart",
+      "title": "Real-time Analytics",
+      "description": "Comprehensive analytics with real-time data processing and visualization.",
+      "benefits": [
+        "Live performance metrics",
+        "Custom dashboards",
+        "Trend analysis",
+        "Automated reporting"
+      ]
+    },
+    {
+      "icon": "Bell",
+      "title": "Intelligent Alerting",
+      "description": "Advanced alerting system with machine learning-powered anomaly detection.",
+      "benefits": [
+        "Customizable alerts",
+        "Anomaly detection",
+        "Alert aggregation",
+        "Incident management"
+      ]
+    },
+    {
+      "icon": "Server",
+      "title": "Infrastructure Monitoring",
+      "description": "Complete visibility into your infrastructure health and performance.",
+      "benefits": [
+        "Resource utilization",
+        "Service health checks",
+        "Network monitoring",
+        "Log analysis"
+      ]
+    },
+    {
+      "icon": "Zap",
+      "title": "Performance Insights",
+      "description": "Deep insights into application and infrastructure performance.",
+      "benefits": [
+        "Performance metrics",
+        "Bottleneck detection",
+        "Capacity planning",
+        "Optimization recommendations"
+      ]
+    }
+  ],
+  "stats": [
+    {
+      "value": "1B+",
+      "label": "Events Processed Daily"
+    },
+    {
+      "value": "<10s",
+      "label": "Alert Response Time"
+    },
+    {
+      "value": "99.99%",
+      "label": "Platform Uptime"
+    }
+  ],
+  "cta": {
+    "title": "Ready to gain deeper insights?",
+    "description": "Start monitoring your infrastructure with our enterprise-grade analytics platform.",
+    "button": {
+      "text": "Start your free trial",
+      "link": "/signup"
+    }
+  }
+}

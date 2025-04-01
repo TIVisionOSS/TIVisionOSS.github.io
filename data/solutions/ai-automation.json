@@ -1,0 +1,84 @@
+{
+  "hero": {
+    "title": "AI & Automation Solutions",
+    "description": "Transform your business with intelligent automation and AI-powered solutions that streamline operations and drive innovation.",
+    "cta": {
+      "primary": {
+        "text": "Get started",
+        "link": "/signup"
+      },
+      "secondary": {
+        "text": "Contact sales",
+        "link": "/contact"
+      }
+    }
+  },
+  "features": [
+    {
+      "icon": "Bot",
+      "title": "Intelligent Automation",
+      "description": "Automate complex business processes with AI-powered workflows.",
+      "benefits": [
+        "Process automation",
+        "Workflow optimization",
+        "Decision automation",
+        "Intelligent routing"
+      ]
+    },
+    {
+      "icon": "Brain",
+      "title": "Machine Learning",
+      "description": "Advanced ML models for predictive analytics and insights.",
+      "benefits": [
+        "Predictive analytics",
+        "Pattern recognition",
+        "Anomaly detection",
+        "Custom model training"
+      ]
+    },
+    {
+      "icon": "Cpu",
+      "title": "AI Infrastructure",
+      "description": "Scalable infrastructure for AI and ML workloads.",
+      "benefits": [
+        "GPU acceleration",
+        "Model deployment",
+        "Resource optimization",
+        "Auto-scaling"
+      ]
+    },
+    {
+      "icon": "Workflow",
+      "title": "Integration & APIs",
+      "description": "Seamless integration with existing systems and workflows.",
+      "benefits": [
+        "API connectivity",
+        "Custom integrations",
+        "Real-time processing",
+        "Data pipelines"
+      ]
+    }
+  ],
+  "stats": [
+    {
+      "value": "90%",
+      "label": "Process Automation"
+    },
+    {
+      "value": "10x",
+      "label": "Faster Processing"
+    },
+    {
+      "value": "24/7",
+      "label": "AI Operations"
+    }
+  ],
+  "cta": {
+    "title": "Ready to transform your business?",
+    "description": "Start leveraging AI and automation to streamline your operations and drive innovation.",
+    "button": {
+      "text": "Start your free trial",
+      "link": "/signup"
+    }
+  }
+}

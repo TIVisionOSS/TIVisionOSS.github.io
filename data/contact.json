@@ -1,0 +1,54 @@
+{
+  "hero": {
+    "title": "Contact Us",
+    "description": "Get in touch with our team to learn more about our solutions and how we can help your business."
+  },
+  "contactCards": [
+    {
+      "icon": "Phone",
+      "title": "Sales",
+      "description": "Talk to our sales team about your needs",
+      "contact": "+1 (888) 123-4567"
+    },
+    {
+      "icon": "MessageSquare",
+      "title": "Support",
+      "description": "24/7 technical support for our customers",
+      "contact": "support@tonmoyiv.com"
+    },
+    {
+      "icon": "Building",
+      "title": "Office",
+      "description": "Visit our headquarters",
+      "contact": "123 Tech Street\nSan Francisco, CA 94105"
+    }
+  ],
+  "form": {
+    "title": "Send us a message",
+    "fields": {
+      "name": {
+        "label": "Name",
+        "placeholder": "Enter your name",
+        "required": true
+      },
+      "email": {
+        "label": "Email",
+        "placeholder": "Enter your email",
+        "required": true
+      },
+      "company": {
+        "label": "Company",
+        "placeholder": "Enter your company name",
+        "required": true
+      },
+      "message": {
+        "label": "Message",
+        "placeholder": "How can we help you?",
+        "required": true
+      }
+    },
+    "button": {
+      "text": "Send message"
+    }
+  }
+}

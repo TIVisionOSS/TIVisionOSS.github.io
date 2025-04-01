@@ -1,0 +1,84 @@
+{
+  "hero": {
+    "title": "Enterprise Database Solutions",
+    "description": "Scalable, secure, and high-performance database solutions designed for enterprise workloads and mission-critical applications.",
+    "cta": {
+      "primary": {
+        "text": "Get started",
+        "link": "/signup"
+      },
+      "secondary": {
+        "text": "Contact sales",
+        "link": "/contact"
+      }
+    }
+  },
+  "features": [
+    {
+      "icon": "Database",
+      "title": "Managed Databases",
+      "description": "Fully managed database services with automated maintenance and scaling.",
+      "benefits": [
+        "Automated backups",
+        "Point-in-time recovery",
+        "Automatic scaling",
+        "24/7 monitoring"
+      ]
+    },
+    {
+      "icon": "Shield",
+      "title": "Security & Compliance",
+      "description": "Enterprise-grade security features and compliance certifications.",
+      "benefits": [
+        "Encryption at rest",
+        "Network isolation",
+        "Access controls",
+        "Audit logging"
+      ]
+    },
+    {
+      "icon": "Zap",
+      "title": "High Performance",
+      "description": "Optimized database performance for demanding workloads.",
+      "benefits": [
+        "Read replicas",
+        "Query optimization",
+        "Connection pooling",
+        "Cache management"
+      ]
+    },
+    {
+      "icon": "Server",
+      "title": "High Availability",
+      "description": "Ensure continuous operation with robust failover capabilities.",
+      "benefits": [
+        "Multi-zone deployment",
+        "Automatic failover",
+        "Load balancing",
+        "Disaster recovery"
+      ]
+    }
+  ],
+  "stats": [
+    {
+      "value": "99.999%",
+      "label": "Uptime SLA"
+    },
+    {
+      "value": "<10ms",
+      "label": "Latency"
+    },
+    {
+      "value": "24/7",
+      "label": "Expert Support"
+    }
+  ],
+  "cta": {
+    "title": "Ready to scale your database infrastructure?",
+    "description": "Get started with our enterprise database solutions and experience unmatched performance and reliability.",
+    "button": {
+      "text": "Start your free trial",
+      "link": "/signup"
+    }
+  }
+}

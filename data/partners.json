@@ -1,0 +1,124 @@
+{
+  "hero": {
+    "title": "Partners & Investors",
+    "description": "Join our network of industry leaders and innovators shaping the future of internet security and infrastructure.",
+    "cta": {
+      "primary": {
+        "text": "Become a Partner",
+        "link": "/partners/become-partner"
+      },
+      "secondary": {
+        "text": "Contact Us",
+        "link": "/partners/contact"
+      }
+    }
+  },
+  "partnerTypes": [
+    {
+      "icon": "Handshake",
+      "title": "Technology Partners",
+      "description": "Integrate our solutions with your technology stack and deliver enhanced value to your customers.",
+      "benefits": [
+        "API integration support",
+        "Technical documentation",
+        "Partner portal access",
+        "Joint marketing opportunities",
+        "Dedicated partner support"
+      ],
+      "link": {
+        "text": "Learn more",
+        "href": "/partners/technology"
+      }
+    },
+    {
+      "icon": "Building2",
+      "title": "Enterprise Partners",
+      "description": "Strategic partnerships for large organizations looking to transform their security infrastructure.",
+      "benefits": [
+        "Custom solutions",
+        "Dedicated account team",
+        "Priority features access",
+        "Executive support",
+        "Strategic roadmap input"
+      ],
+      "link": {
+        "text": "Learn more",
+        "href": "/partners/enterprise"
+      }
+    },
+    {
+      "icon": "Users2",
+      "title": "Reseller Program",
+      "description": "Join our global network of resellers and grow your business with our industry-leading solutions.",
+      "benefits": [
+        "Competitive margins",
+        "Sales enablement",
+        "Marketing resources",
+        "Training programs",
+        "Lead sharing"
+      ],
+      "link": {
+        "text": "Join program",
+        "href": "/partners/reseller"
+      }
+    },
+    {
+      "icon": "Trophy",
+      "title": "Investors",
+      "description": "Explore investment opportunities in the rapidly growing cybersecurity and infrastructure market.",
+      "benefits": [
+        "Growth metrics",
+        "Financial reports",
+        "Investment deck",
+        "Market analysis",
+        "Regular updates"
+      ],
+      "link": {
+        "text": "Learn more",
+        "href": "/partners/investors"
+      }
+    }
+  ],
+  "stats": [
+    {
+      "value": "500+",
+      "label": "Global Partners"
+    },
+    {
+      "value": "$100M+",
+      "label": "Partner Revenue"
+    },
+    {
+      "value": "95%",
+      "label": "Partner Satisfaction"
+    }
+  ],
+  "testimonials": [
+    {
+      "quote": "The partnership with Tonmoy I&V has been transformative for our business. Their technology and support are unmatched in the industry.",
+      "author": "Sarah Chen",
+      "role": "CEO",
+      "company": "TechForward Solutions"
+    },
+    {
+      "quote": "As a reseller, we've seen tremendous growth since partnering with Tonmoy I&V. Their solutions sell themselves.",
+      "author": "Michael Rodriguez",
+      "role": "Sales Director",
+      "company": "SecureNet Partners"
+    },
+    {
+      "quote": "The level of innovation and support we receive as a technology partner is exceptional. They truly care about our success.",
+      "author": "Emily Watson",
+      "role": "CTO",
+      "company": "CloudGuard Systems"
+    }
+  ],
+  "cta": {
+    "title": "Ready to partner with us?",
+    "description": "Join our partner ecosystem and help shape the future of internet security and infrastructure.",
+    "button": {
+      "text": "Become a Partner",
+      "link": "/partners/apply"
+    }
+  }
+}
