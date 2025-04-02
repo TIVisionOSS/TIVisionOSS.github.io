@@ -1,6 +1,7 @@
 "use client"
 
 import { useState } from "react"
+import Image from "next/image"
 import { Calendar } from "@/components/ui/calendar"
 import { Card, CardContent } from "@/components/ui/card"
 import { Button } from "@/components/ui/button"
@@ -91,9 +92,11 @@ export default function AppointmentPage() {
                 <div className="text-center mb-8">
                   <div className="relative w-48 h-48 mx-auto mb-6">
                     <div className="absolute inset-0 bg-gradient-to-br from-orange-500 to-orange-600 rounded-full opacity-10 animate-pulse" />
-                    <img
+                    <Image
                       src={data.ceo.image}
                       alt={data.ceo.name}
+                      width={192}
+                      height={192}
                       className="rounded-full w-full h-full object-cover border-4 border-orange-500/20"
                     />
                   </div>

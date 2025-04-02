@@ -1,6 +1,7 @@
 "use client"
 
 import Link from "next/link"
+import Image from "next/image"
 import { Button } from "@/components/ui/button"
 import { Card, CardContent } from "@/components/ui/card"
 import { Shield, Globe, Users, Rocket, Award, Target } from "lucide-react"
@@ -194,9 +195,11 @@ export default function AboutPage() {
                   <CardContent className="pt-6">
                     <div className="relative w-32 h-32 mx-auto mb-4">
                       <div className="absolute inset-0 bg-gradient-to-br from-orange-500 to-orange-600 rounded-full opacity-10 animate-pulse" />
-                      <img
+                      <Image
                         src={aboutData.leadership[0].image}
                         alt={aboutData.leadership[0].name}
+                        width={128}
+                        height={128}
                         className="rounded-full w-full h-full object-cover border-4 border-orange-500/20"
                       />
                     </div>
@@ -218,9 +221,11 @@ export default function AboutPage() {
                   <CardContent className="pt-6">
                     <div className="relative w-32 h-32 mx-auto mb-4">
                       <div className="absolute inset-0 bg-gradient-to-br from-orange-500 to-orange-600 rounded-full opacity-10 animate-pulse" />
-                      <img
+                      <Image
                         src={aboutData.leadership[1].image}
                         alt={aboutData.leadership[1].name}
+                        width={128}
+                        height={128}
                         className="rounded-full w-full h-full object-cover border-4 border-orange-500/20"
                       />
                     </div>

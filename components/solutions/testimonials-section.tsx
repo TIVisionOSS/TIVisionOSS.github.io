@@ -30,7 +30,7 @@ export function TestimonialsSection({ testimonials }: TestimonialsProps) {
               <Card>
                 <CardContent className="pt-6">
                   <p className="text-lg mb-6 italic text-muted-foreground">
-                    "{testimonial.quote}"
+                    &quot;{testimonial.quote}&quot;
                   </p>
                   <div>
                     <p className="font-semibold">{testimonial.author}</p>

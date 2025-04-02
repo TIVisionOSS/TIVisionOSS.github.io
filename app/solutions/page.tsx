@@ -63,7 +63,7 @@ export default function Solutions() {
                 <Zap className="h-12 w-12 mb-4 text-primary" />
                 <h3 className="text-xl font-semibold mb-2">Performance</h3>
                 <p className="text-muted-foreground mb-4">
-                  Optimize your website's speed and performance globally.
+                  Optimize your website&apos;s speed and performance globally.
                 </p>
                 <Link href="/solutions/performance">
                   <Button variant="outline" className="w-full">Learn more</Button>

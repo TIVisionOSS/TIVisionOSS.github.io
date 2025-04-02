@@ -8,7 +8,7 @@ import { cn } from "@/lib/utils"
 export const ListItem = React.forwardRef<
   React.ElementRef<"a">,
   React.ComponentPropsWithoutRef<"a"> & { icon?: React.ReactNode }
->(({ className, title, children, icon, ...props }, ref) => {
+>(function ListItem({ className, title, children, icon, ...props }, ref) {
   return (
     <li>
       <NavigationMenuLink asChild>

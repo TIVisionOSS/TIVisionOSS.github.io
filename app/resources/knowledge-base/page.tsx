@@ -141,7 +141,7 @@ export default function KnowledgeBasePage() {
       <section className="py-20 bg-primary/5">
         <div className="container">
           <div className="max-w-3xl mx-auto text-center">
-            <h2 className="text-3xl font-bold mb-6">Can't find what you're looking for?</h2>
+            <h2 className="text-3xl font-bold mb-6">Can&apos;t find what you&apos;re looking for?</h2>
             <p className="text-xl text-muted-foreground mb-8">
               Our support team is here to help you with any questions or concerns.
             </p>
