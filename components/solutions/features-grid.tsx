@@ -11,7 +11,7 @@ const icons = {
   Server
 }
 
-interface Feature {
+export interface Feature {
   icon: keyof typeof icons
   title: string
   description: string

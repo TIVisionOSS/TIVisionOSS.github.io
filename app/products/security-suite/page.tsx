@@ -38,12 +38,13 @@ export default function SecuritySuitePage() {
         <div className="container">
           <div className="grid gap-8 md:grid-cols-2">
             {data.features.map((feature, index) => {
-              const Icon = {
+              const icons = {
                 Shield,
                 Lock,
                 AlertTriangle,
                 Eye
-              }[feature.icon as keyof typeof feature.icon]
+              };
+              const Icon = icons[feature.icon as keyof typeof icons];
 
               return (
                 <Card key={index}>
