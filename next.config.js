@@ -1,12 +1,11 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  output: 'export',
-  eslint: {
-    ignoreDuringBuilds: true,
+  output: "export",
+  distDir: "out",
+  basePath: "/TIVisionOSS.github.io", // Change this to your GitHub repo name
+  images: {
+    unoptimized: true, // Next.js image optimization does not work with GitHub Pages
   },
-  images: { unoptimized: true },
-  basePath: '/TIVisionOSS.github.io', // Replace 'repository-name' with your GitHub repository name
-  assetPrefix: '/TIVisionOSS.github.io', // Replace 'repository-name' with your GitHub repository name
 };
 
 module.exports = nextConfig;
