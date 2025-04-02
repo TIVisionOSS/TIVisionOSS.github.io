@@ -2,11 +2,13 @@
   "name": "nextjs",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://TIVisionOSS.github.io/",
   "scripts": {
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "deploy": "next build && next export && touch out/.nojekyll && git add out && git commit -m 'Deploy to GitHub Pages' && git subtree push --prefix out origin gh-pages"
   },
   "dependencies": {
     "@emailjs/browser": "^4.3.3",
