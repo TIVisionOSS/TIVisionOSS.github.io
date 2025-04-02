@@ -5,16 +5,8 @@ import { Button } from "@/components/ui/button"
 import { Card, CardContent } from "@/components/ui/card"
 import { Shield, Globe, Users, Rocket, Award, Target } from "lucide-react"
 import { motion } from "framer-motion"
-import { constructMetadata } from "@/lib/metadata"
-
-export const metadata = constructMetadata({
-  title: "About Us",
-  description: "Learn about Tonmoy Infrastructure & Vision's mission, values, and the team behind our enterprise security and infrastructure solutions.",
-  openGraph: {
-    title: "About Tonmoy Infrastructure & Vision",
-    description: "Learn about our mission, values, and the team behind our enterprise security and infrastructure solutions.",
-  }
-})
+// import { constructMetadata } from "@/lib/metadata"
+import aboutData from "@/data/about.json"
 
 export default function AboutPage() {
   return (
@@ -23,18 +15,19 @@ export default function AboutPage() {
         <div className="container">
           <div className="max-w-3xl mx-auto text-center">
             <h1 className="text-4xl font-bold tracking-tight sm:text-6xl">
-              About Tonmoy Infrastructure & Vision
+              {aboutData.hero.title}
             </h1>
             <p className="mt-6 text-xl text-muted-foreground">
-              Leading the future of internet security and infrastructure with innovative solutions and unmatched expertise.
+              {aboutData.hero.description}
             </p>
             <div className="mt-8 flex justify-center gap-4">
-              <Link href="/contact">
-                <Button size="lg" className="cloudflare-button">Contact Us</Button>
-              </Link>
-              <Link href="/careers">
-                <Button size="lg" variant="outline" className="cloudflare-outline-button">Join Our Team</Button>
-              </Link>
+              {aboutData.hero.ctaButtons.map((button, index) => (
+                <Link key={index} href={button.href}>
+                  <Button size="lg" variant={button.variant as "default" | "outline"} className={button.variant === 'default' ? 'cloudflare-button' : 'cloudflare-outline-button'}>
+                    {button.text}
+                  </Button>
+                </Link>
+              ))}
             </div>
           </div>
         </div>
@@ -51,15 +44,14 @@ export default function AboutPage() {
               <Card>
                 <CardContent className="pt-6">
                   <Shield className="h-12 w-12 mb-4 text-primary" />
-                  <h3 className="text-xl font-semibold mb-2">Our Mission</h3>
+                  <h3 className="text-xl font-semibold mb-2">{aboutData.mission.title}</h3>
                   <p className="text-muted-foreground mb-4">
-                    To secure and accelerate the internet through innovative infrastructure solutions that empower businesses worldwide.
+                    {aboutData.mission.description}
                   </p>
                   <ul className="space-y-2 mb-6 text-sm">
-                    <li className="flex items-center">✓ Enterprise-grade security</li>
-                    <li className="flex items-center">✓ Global infrastructure</li>
-                    <li className="flex items-center">✓ Innovative solutions</li>
-                    <li className="flex items-center">✓ Customer-first approach</li>
+                    {aboutData.mission.bullets.map((bullet, index) => (
+                      <li key={index} className="flex items-center">✓ {bullet}</li>
+                    ))}
                   </ul>
                 </CardContent>
               </Card>
@@ -73,15 +65,14 @@ export default function AboutPage() {
               <Card>
                 <CardContent className="pt-6">
                   <Globe className="h-12 w-12 mb-4 text-primary" />
-                  <h3 className="text-xl font-semibold mb-2">Global Presence</h3>
+                  <h3 className="text-xl font-semibold mb-2">{aboutData.globalPresence.title}</h3>
                   <p className="text-muted-foreground mb-4">
-                    Operating worldwide with a network of data centers and edge locations.
+                    {aboutData.globalPresence.description}
                   </p>
                   <ul className="space-y-2 mb-6 text-sm">
-                    <li className="flex items-center">✓ 250+ edge locations</li>
-                    <li className="flex items-center">✓ 50+ countries served</li>
-                    <li className="flex items-center">✓ 24/7 global support</li>
-                    <li className="flex items-center">✓ Regional expertise</li>
+                    {aboutData.globalPresence.bullets.map((bullet, index) => (
+                      <li key={index} className="flex items-center">✓ {bullet}</li>
+                    ))}
                   </ul>
                 </CardContent>
               </Card>
@@ -100,10 +91,10 @@ export default function AboutPage() {
               className="relative"
             >
               <div className="text-5xl font-bold mb-4 bg-clip-text text-transparent bg-gradient-to-r from-orange-500 to-orange-600">
-                2015
+                {aboutData.stats[0].value}
               </div>
               <div className="text-xl text-muted-foreground font-medium">
-                Founded
+                {aboutData.stats[0].label}
               </div>
             </motion.div>
             <motion.div
@@ -113,10 +104,10 @@ export default function AboutPage() {
               className="relative"
             >
               <div className="text-5xl font-bold mb-4 bg-clip-text text-transparent bg-gradient-to-r from-orange-500 to-orange-600">
-                500+
+                {aboutData.stats[1].value}
               </div>
               <div className="text-xl text-muted-foreground font-medium">
-                Team Members
+                {aboutData.stats[1].label}
               </div>
             </motion.div>
             <motion.div
@@ -126,10 +117,10 @@ export default function AboutPage() {
               className="relative"
             >
               <div className="text-5xl font-bold mb-4 bg-clip-text text-transparent bg-gradient-to-r from-orange-500 to-orange-600">
-                10K+
+                {aboutData.stats[2].value}
               </div>
               <div className="text-xl text-muted-foreground font-medium">
-                Customers Worldwide
+                {aboutData.stats[2].label}
               </div>
             </motion.div>
           </div>
@@ -148,9 +139,9 @@ export default function AboutPage() {
               <Card>
                 <CardContent className="pt-6">
                   <Rocket className="h-12 w-12 mb-4 text-primary" />
-                  <h3 className="text-xl font-semibold mb-2">Innovation</h3>
+                  <h3 className="text-xl font-semibold mb-2">{aboutData.values[0].title}</h3>
                   <p className="text-muted-foreground">
-                    Pushing the boundaries of technology to create cutting-edge solutions that address tomorrow's challenges today.
+                    {aboutData.values[0].description}
                   </p>
                 </CardContent>
               </Card>
@@ -164,9 +155,9 @@ export default function AboutPage() {
               <Card>
                 <CardContent className="pt-6">
                   <Users className="h-12 w-12 mb-4 text-primary" />
-                  <h3 className="text-xl font-semibold mb-2">Customer Focus</h3>
+                  <h3 className="text-xl font-semibold mb-2">{aboutData.values[1].title}</h3>
                   <p className="text-muted-foreground">
-                    Putting our customers first and building long-term relationships based on trust and mutual success.
+                    {aboutData.values[1].description}
                   </p>
                 </CardContent>
               </Card>
@@ -180,9 +171,9 @@ export default function AboutPage() {
               <Card>
                 <CardContent className="pt-6">
                   <Award className="h-12 w-12 mb-4 text-primary" />
-                  <h3 className="text-xl font-semibold mb-2">Excellence</h3>
+                  <h3 className="text-xl font-semibold mb-2">{aboutData.values[2].title}</h3>
                   <p className="text-muted-foreground">
-                    Striving for excellence in everything we do, from product development to customer support.
+                    {aboutData.values[2].description}
                   </p>
                 </CardContent>
               </Card>
@@ -206,15 +197,15 @@ export default function AboutPage() {
                     <div className="relative w-32 h-32 mx-auto mb-4">
                       <div className="absolute inset-0 bg-gradient-to-br from-orange-500 to-orange-600 rounded-full opacity-10 animate-pulse" />
                       <img
-                        src="https://images.unsplash.com/photo-1556157382-97eda2d62296?auto=format&fit=crop&q=80"
-                        alt="Eshan Roy"
+                        src={aboutData.leadership[0].image}
+                        alt={aboutData.leadership[0].name}
                         className="rounded-full w-full h-full object-cover border-4 border-orange-500/20"
                       />
                     </div>
-                    <h3 className="text-xl font-semibold text-center mb-1">Eshan Roy</h3>
-                    <p className="text-muted-foreground text-center mb-4">CEO & Founder</p>
+                    <h3 className="text-xl font-semibold text-center mb-1">{aboutData.leadership[0].name}</h3>
+                    <p className="text-muted-foreground text-center mb-4">{aboutData.leadership[0].title}</p>
                     <p className="text-sm text-muted-foreground text-center">
-                      15+ years of experience in infrastructure and security. Previously led security initiatives at major tech companies.
+                      {aboutData.leadership[0].bio}
                     </p>
                   </CardContent>
                 </Card>
@@ -230,15 +221,15 @@ export default function AboutPage() {
                     <div className="relative w-32 h-32 mx-auto mb-4">
                       <div className="absolute inset-0 bg-gradient-to-br from-orange-500 to-orange-600 rounded-full opacity-10 animate-pulse" />
                       <img
-                        src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&q=80"
-                        alt="Sarah Chen"
+                        src={aboutData.leadership[1].image}
+                        alt={aboutData.leadership[1].name}
                         className="rounded-full w-full h-full object-cover border-4 border-orange-500/20"
                       />
                     </div>
-                    <h3 className="text-xl font-semibold text-center mb-1">Sarah Chen</h3>
-                    <p className="text-muted-foreground text-center mb-4">CTO</p>
+                    <h3 className="text-xl font-semibold text-center mb-1">{aboutData.leadership[1].name}</h3>
+                    <p className="text-muted-foreground text-center mb-4">{aboutData.leadership[1].title}</p>
                     <p className="text-sm text-muted-foreground text-center">
-                      Expert in cloud infrastructure and distributed systems. Pioneered several breakthrough technologies in web security.
+                      {aboutData.leadership[1].bio}
                     </p>
                   </CardContent>
                 </Card>
@@ -251,12 +242,12 @@ export default function AboutPage() {
       <section className="py-20 bg-primary/5">
         <div className="container">
           <div className="max-w-3xl mx-auto text-center">
-            <h2 className="text-3xl font-bold mb-6">Join Our Team</h2>
+            <h2 className="text-3xl font-bold mb-6">{aboutData.joinTeam.title}</h2>
             <p className="text-xl text-muted-foreground mb-8">
-              We're always looking for talented individuals who share our passion for innovation and excellence.
+              {aboutData.joinTeam.description}
             </p>
-            <Link href="/careers">
-              <Button size="lg" className="cloudflare-button">View Open Positions</Button>
+            <Link href={aboutData.joinTeam.ctaButton.href}>
+              <Button size="lg" className="cloudflare-button">{aboutData.joinTeam.ctaButton.text}</Button>
             </Link>
           </div>
         </div>

@@ -1,0 +1,63 @@
+{
+  "hero": {
+    "title": "Join Our Partner Network",
+    "description": "Partner with us to expand your business opportunities and deliver enhanced value to your customers through our industry-leading solutions."
+  },
+  "partnerTypes": [
+    {
+      "icon": "Handshake",
+      "title": "Technology Partners",
+      "description": "Integrate our solutions with your technology stack and deliver enhanced value to your customers.",
+      "benefits": [
+        "API integration support",
+        "Technical documentation",
+        "Partner portal access",
+        "Joint marketing opportunities"
+      ],
+      "cta": {
+        "text": "Apply Now",
+        "link": "/contact"
+      }
+    },
+    {
+      "icon": "Shield",
+      "title": "Solution Partners",
+      "description": "Resell our solutions and provide implementation services to your customers.",
+      "benefits": [
+        "Competitive margins",
+        "Sales enablement",
+        "Training programs",
+        "Lead sharing"
+      ],
+      "cta": {
+        "text": "Apply Now",
+        "link": "/contact"
+      }
+    }
+  ],
+  "benefits": [
+    {
+      "icon": "Users",
+      "title": "Dedicated Support",
+      "description": "Get access to dedicated partner support, training resources, and technical expertise."
+    },
+    {
+      "icon": "LineChart",
+      "title": "Growth Opportunities",
+      "description": "Expand your business with new revenue streams and market opportunities."
+    },
+    {
+      "icon": "Shield",
+      "title": "Industry Leadership",
+      "description": "Partner with a recognized leader in security and infrastructure solutions."
+    }
+  ],
+  "cta": {
+    "title": "Ready to become a partner?",
+    "description": "Join our partner ecosystem and help shape the future of internet security and infrastructure.",
+    "button": {
+      "text": "Apply Now",
+      "link": "/contact"
+    }
+  }
+}

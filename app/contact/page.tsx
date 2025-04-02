@@ -10,16 +10,6 @@ import { Mail, Phone, MessageSquare, Building } from "lucide-react"
 import { useToast } from "@/hooks/use-toast"
 import emailjs from '@emailjs/browser'
 import data from "@/data/contact.json"
-import { constructMetadata } from "@/lib/metadata"
-
-export const metadata = constructMetadata({
-  title: "Contact Us",
-  description: "Get in touch with our team to learn how we can help secure and accelerate your online presence.",
-  openGraph: {
-    title: "Contact Tonmoy Infrastructure & Vision",
-    description: "Get in touch with our team to learn how we can help secure and accelerate your online presence.",
-  }
-})
 
 export default function ContactPage() {
   const [name, setName] = useState("")
@@ -90,7 +80,7 @@ export default function ContactPage() {
                 Phone,
                 MessageSquare,
                 Building
-              }[card.icon as keyof typeof card.icon]
+              }[card.icon as "Phone" | "MessageSquare" | "Building"]
 
               return (
                 <Card key={index}>

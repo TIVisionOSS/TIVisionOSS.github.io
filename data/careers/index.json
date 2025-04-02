@@ -1,0 +1,101 @@
+{
+  "hero": {
+    "title": "Join Our Team",
+    "description": "Help us build the future of internet security and infrastructure. We're looking for talented individuals who share our passion for innovation and excellence."
+  },
+  "departments": [
+    {
+      "name": "Engineering",
+      "positions": [
+        {
+          "title": "Senior Security Engineer",
+          "location": "San Francisco, CA",
+          "type": "Full-time",
+          "description": "Join our security team to help protect enterprise infrastructure from evolving cyber threats.",
+          "requirements": [
+            "5+ years of security engineering experience",
+            "Experience with cloud security",
+            "Knowledge of network protocols",
+            "Strong coding skills in Python/Go"
+          ]
+        },
+        {
+          "title": "Full Stack Developer",
+          "location": "Remote",
+          "type": "Full-time",
+          "description": "Build and maintain enterprise-grade applications using modern web technologies.",
+          "requirements": [
+            "3+ years of full stack development",
+            "Experience with React and Node.js",
+            "Database design expertise",
+            "CI/CD knowledge"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Infrastructure",
+      "positions": [
+        {
+          "title": "Cloud Infrastructure Architect",
+          "location": "New York, NY",
+          "type": "Full-time",
+          "description": "Design and implement scalable cloud infrastructure solutions for enterprise clients.",
+          "requirements": [
+            "7+ years of cloud architecture",
+            "Multi-cloud experience",
+            "Infrastructure as Code",
+            "Performance optimization"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Product",
+      "positions": [
+        {
+          "title": "Product Manager",
+          "location": "San Francisco, CA",
+          "type": "Full-time",
+          "description": "Lead product strategy and development for our security solutions.",
+          "requirements": [
+            "5+ years product management",
+            "Security product experience",
+            "Technical background",
+            "Strong communication skills"
+          ]
+        }
+      ]
+    }
+  ],
+  "benefits": [
+    {
+      "icon": "Globe",
+      "title": "Remote-First Culture",
+      "description": "Work from anywhere in the world with our distributed team."
+    },
+    {
+      "icon": "Users",
+      "title": "Health & Wellness",
+      "description": "Comprehensive health coverage and wellness programs for you and your family."
+    },
+    {
+      "icon": "Shield",
+      "title": "Learning & Development",
+      "description": "Continuous learning opportunities and professional development budget."
+    },
+    {
+      "icon": "Server",
+      "title": "Latest Technology",
+      "description": "Work with cutting-edge technology and tools in cloud and security."
+    }
+  ],
+  "cta": {
+    "title": "Don't see the right position?",
+    "description": "We're always looking for talented individuals. Send us your resume and we'll keep you in mind for future opportunities.",
+    "button": {
+      "text": "Contact Us",
+      "link": "/contact"
+    }
+  }
+}

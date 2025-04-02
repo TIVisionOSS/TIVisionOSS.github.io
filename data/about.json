@@ -1,0 +1,79 @@
+{
+  "hero": {
+    "title": "About Tonmoy Infrastructure & Vision",
+    "description": "Leading the future of internet security and infrastructure with innovative solutions and unmatched expertise."
+  },
+  "mission": {
+    "title": "Our Mission",
+    "description": "To secure and accelerate the internet through innovative infrastructure solutions that empower businesses worldwide.",
+    "points": [
+      "Enterprise-grade security",
+      "Global infrastructure",
+      "Innovative solutions",
+      "Customer-first approach"
+    ]
+  },
+  "presence": {
+    "title": "Global Presence",
+    "description": "Operating worldwide with a network of data centers and edge locations.",
+    "points": [
+      "250+ edge locations",
+      "50+ countries served",
+      "24/7 global support",
+      "Regional expertise"
+    ]
+  },
+  "stats": [
+    {
+      "value": "2015",
+      "label": "Founded"
+    },
+    {
+      "value": "500+",
+      "label": "Team Members"
+    },
+    {
+      "value": "10K+",
+      "label": "Customers Worldwide"
+    }
+  ],
+  "values": [
+    {
+      "icon": "Rocket",
+      "title": "Innovation",
+      "description": "Pushing the boundaries of technology to create cutting-edge solutions that address tomorrow's challenges today."
+    },
+    {
+      "icon": "Users",
+      "title": "Customer Focus",
+      "description": "Putting our customers first and building long-term relationships based on trust and mutual success."
+    },
+    {
+      "icon": "Award",
+      "title": "Excellence",
+      "description": "Striving for excellence in everything we do, from product development to customer support."
+    }
+  ],
+  "leadership": [
+    {
+      "name": "Eshan Roy",
+      "role": "CEO & Founder",
+      "description": "15+ years of experience in infrastructure and security. Previously led security initiatives at major tech companies.",
+      "image": "https://images.unsplash.com/photo-1556157382-97eda2d62296?auto=format&fit=crop&q=80"
+    },
+    {
+      "name": "Sarah Chen",
+      "role": "CTO",
+      "description": "Expert in cloud infrastructure and distributed systems. Pioneered several breakthrough technologies in web security.",
+      "image": "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&q=80"
+    }
+  ],
+  "careers": {
+    "title": "Join Our Team",
+    "description": "We're always looking for talented individuals who share our passion for innovation and excellence.",
+    "button": {
+      "text": "View Open Positions",
+      "link": "/careers"
+    }
+  }
+}

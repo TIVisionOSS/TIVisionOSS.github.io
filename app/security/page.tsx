@@ -5,16 +5,6 @@ import { Button } from "@/components/ui/button"
 import { Card, CardContent } from "@/components/ui/card"
 import { Shield, Lock, AlertTriangle, Eye, FileCheck, Users } from "lucide-react"
 import { motion } from "framer-motion"
-import { constructMetadata } from "@/lib/metadata"
-
-export const metadata = constructMetadata({
-  title: "Security Overview",
-  description: "Learn about our comprehensive security measures and compliance standards that protect your infrastructure and data.",
-  openGraph: {
-    title: "Enterprise Security Overview | Tonmoy I&V",
-    description: "Learn about our comprehensive security measures and compliance standards.",
-  }
-})
 
 export default function SecurityPage() {
   return (

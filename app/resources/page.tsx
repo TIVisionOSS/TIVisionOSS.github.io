@@ -2,16 +2,6 @@ import Link from "next/link"
 import { Button } from "@/components/ui/button"
 import { Card, CardContent } from "@/components/ui/card"
 import { BookOpen, FileText, Video, Users } from "lucide-react"
-import { constructMetadata } from "@/lib/metadata"
-
-export const metadata = constructMetadata({
-  title: "Resources",
-  description: "Access documentation, tutorials, and resources to help you make the most of our enterprise security and infrastructure solutions.",
-  openGraph: {
-    title: "Resources & Documentation | Tonmoy I&V",
-    description: "Access documentation, tutorials, and resources for our enterprise security and infrastructure solutions.",
-  }
-})
 
 export default function Resources() {
   return (

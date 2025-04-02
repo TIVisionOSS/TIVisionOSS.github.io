@@ -1,0 +1,79 @@
+{
+  "hero": {
+    "title": "Schedule a Meeting",
+    "description": "Book a one-on-one consultation to discuss your infrastructure needs"
+  },
+  "ceo": {
+    "name": "Eshan Roy",
+    "role": "CEO, Tonmoy Infrastructure & Vision",
+    "image": "https://images.unsplash.com/photo-1556157382-97eda2d62296?auto=format&fit=crop&q=80",
+    "details": [
+      {
+        "icon": "Globe",
+        "text": "15+ years of industry experience"
+      },
+      {
+        "icon": "Shield",
+        "text": "Expert in infrastructure security & scaling"
+      },
+      {
+        "icon": "Mail",
+        "text": "eshan.roy@tonmoyiv.com"
+      },
+      {
+        "icon": "MapPin",
+        "text": "San Francisco, CA"
+      },
+      {
+        "icon": "Clock",
+        "text": "Available Mon-Fri, 9 AM - 5 PM PST"
+      }
+    ],
+    "quote": "I'm looking forward to discussing how we can help secure and scale your infrastructure. Book a meeting to explore solutions tailored to your needs."
+  },
+  "timeSlots": [
+    "09:00 AM",
+    "10:00 AM",
+    "11:00 AM",
+    "02:00 PM",
+    "03:00 PM",
+    "04:00 PM"
+  ],
+  "form": {
+    "title": "Schedule a Meeting",
+    "subtitle": "Book a one-on-one consultation to discuss your infrastructure needs",
+    "fields": {
+      "date": {
+        "label": "Select Date"
+      },
+      "time": {
+        "label": "Select Time (PST)"
+      },
+      "name": {
+        "label": "Name",
+        "placeholder": "Your full name",
+        "required": true
+      },
+      "email": {
+        "label": "Email",
+        "placeholder": "your@email.com",
+        "required": true
+      },
+      "company": {
+        "label": "Company",
+        "placeholder": "Your company name",
+        "required": true
+      },
+      "topic": {
+        "label": "Meeting Topic",
+        "placeholder": "Brief description of what you'd like to discuss",
+        "required": true
+      }
+    },
+    "button": {
+      "text": "Request Appointment",
+      "loadingText": "Sending request..."
+    },
+    "confirmation": "You'll receive a confirmation email once your appointment is scheduled"
+  }
+}

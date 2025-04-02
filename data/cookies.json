@@ -1,0 +1,70 @@
+{
+  "hero": {
+    "title": "Cookie Policy",
+    "description": "Learn about how we use cookies to improve your experience."
+  },
+  "sections": [
+    {
+      "title": "What Are Cookies?",
+      "content": "Cookies are small text files that are placed on your device when you visit our website. They help us provide you with a better experience by remembering your preferences, analyzing site usage, and assisting with our marketing efforts."
+    },
+    {
+      "title": "Types of Cookies We Use",
+      "subsections": [
+        {
+          "title": "Essential Cookies",
+          "description": "These cookies are necessary for the website to function properly. They enable core functionality such as security, network management, and accessibility."
+        },
+        {
+          "title": "Analytics Cookies",
+          "description": "We use analytics cookies to understand how visitors interact with our website, helping us improve our services and user experience."
+        },
+        {
+          "title": "Marketing Cookies",
+          "description": "These cookies track your online activity to help advertisers deliver more relevant advertising or to limit how many times you see an ad."
+        }
+      ]
+    },
+    {
+      "title": "How We Use Cookies",
+      "items": [
+        "To remember your preferences and settings",
+        "To understand how you use our website",
+        "To improve our services and user experience",
+        "To provide personalized content and advertising",
+        "To ensure the security of your account"
+      ]
+    },
+    {
+      "title": "Managing Cookies",
+      "content": "You can control and manage cookies in various ways:",
+      "items": [
+        "Browser settings to block or delete cookies",
+        "Cookie consent preferences on our website",
+        "Third-party opt-out mechanisms",
+        "Private browsing modes"
+      ],
+      "note": "Please note that blocking some types of cookies may impact your experience on our website."
+    },
+    {
+      "title": "Third-Party Cookies",
+      "content": "Some cookies are placed by third-party services that appear on our pages. We use these services to:",
+      "items": [
+        "Analyze site traffic and user behavior",
+        "Provide social media features",
+        "Deliver relevant advertising",
+        "Monitor site performance"
+      ]
+    },
+    {
+      "title": "Contact Us",
+      "content": "If you have any questions about our cookie policy, please contact us:",
+      "contact": {
+        "email": "privacy@tonmoyiv.com",
+        "address": "123 Tech Street, San Francisco, CA 94105",
+        "phone": "+1 (888) 123-4567"
+      }
+    }
+  ],
+  "lastUpdated": "March 15, 2024"
+}

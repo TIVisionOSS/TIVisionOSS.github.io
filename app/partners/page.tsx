@@ -6,16 +6,6 @@ import { Button } from "@/components/ui/button"
 import { Card, CardContent } from "@/components/ui/card"
 import { Handshake, Building2, Users2, Trophy } from "lucide-react"
 import data from "@/data/partners.json"
-import { constructMetadata } from "@/lib/metadata"
-
-export const metadata = constructMetadata({
-  title: "Partners",
-  description: "Partner with Tonmoy I&V to expand your business opportunities and deliver enhanced value to your customers.",
-  openGraph: {
-    title: "Partner Program | Tonmoy Infrastructure & Vision",
-    description: "Partner with us to expand your business opportunities and deliver enhanced value to your customers.",
-  }
-})
 
 const icons = {
   Handshake,

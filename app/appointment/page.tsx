@@ -9,11 +9,15 @@ import { Label } from "@/components/ui/label"
 import { useToast } from "@/hooks/use-toast"
 import { Shield, Calendar as CalendarIcon, Clock, MapPin, Globe, Mail } from "lucide-react"
 import emailjs from '@emailjs/browser'
+import data from "@/data/appointment.json"
 
-const timeSlots = [
-  "09:00 AM", "10:00 AM", "11:00 AM",
-  "02:00 PM", "03:00 PM", "04:00 PM"
-]
+const icons = {
+  Globe,
+  Shield,
+  Mail,
+  MapPin,
+  Clock
+}
 
 export default function AppointmentPage() {
   const [date, setDate] = useState<Date>()
@@ -88,43 +92,32 @@ export default function AppointmentPage() {
                   <div className="relative w-48 h-48 mx-auto mb-6">
                     <div className="absolute inset-0 bg-gradient-to-br from-orange-500 to-orange-600 rounded-full opacity-10 animate-pulse" />
                     <img
-                      src="https://images.unsplash.com/photo-1556157382-97eda2d62296?auto=format&fit=crop&q=80"
-                      alt="Eshan Roy"
+                      src={data.ceo.image}
+                      alt={data.ceo.name}
                       className="rounded-full w-full h-full object-cover border-4 border-orange-500/20"
                     />
                   </div>
-                  <h2 className="text-3xl font-bold mb-2">Eshan Roy</h2>
-                  <p className="text-xl text-orange-500 font-semibold mb-4">CEO, Tonmoy Infrastructure & Vision</p>
+                  <h2 className="text-3xl font-bold mb-2">{data.ceo.name}</h2>
+                  <p className="text-xl text-orange-500 font-semibold mb-4">{data.ceo.role}</p>
                 </div>
 
                 <Card className="overflow-hidden bg-gradient-to-br from-orange-500/5 to-orange-600/5 border-orange-500/20">
                   <CardContent className="p-6">
                     <div className="space-y-4">
-                      <div className="flex items-center gap-3 text-muted-foreground">
-                        <Globe className="h-5 w-5 text-orange-500" />
-                        <span>15+ years of industry experience</span>
-                      </div>
-                      <div className="flex items-center gap-3 text-muted-foreground">
-                        <Shield className="h-5 w-5 text-orange-500" />
-                        <span>Expert in infrastructure security & scaling</span>
-                      </div>
-                      <div className="flex items-center gap-3 text-muted-foreground">
-                        <Mail className="h-5 w-5 text-orange-500" />
-                        <span>eshan.roy@tonmoyiv.com</span>
-                      </div>
-                      <div className="flex items-center gap-3 text-muted-foreground">
-                        <MapPin className="h-5 w-5 text-orange-500" />
-                        <span>San Francisco, CA</span>
-                      </div>
-                      <div className="flex items-center gap-3 text-muted-foreground">
-                        <Clock className="h-5 w-5 text-orange-500" />
-                        <span>Available Mon-Fri, 9 AM - 5 PM PST</span>
-                      </div>
+                      {data.ceo.details.map((detail, index) => {
+                        const Icon = icons[detail.icon as keyof typeof icons]
+                        return (
+                          <div key={index} className="flex items-center gap-3 text-muted-foreground">
+                            <Icon className="h-5 w-5 text-orange-500" />
+                            <span>{detail.text}</span>
+                          </div>
+                        )
+                      })}
                     </div>
 
                     <div className="mt-6 p-4 bg-orange-500/5 rounded-lg border border-orange-500/10">
                       <p className="text-sm text-muted-foreground italic">
-                        "I'm looking forward to discussing how we can help secure and scale your infrastructure. Book a meeting to explore solutions tailored to your needs."
+                        {data.ceo.quote}
                       </p>
                     </div>
                   </CardContent>
@@ -137,16 +130,16 @@ export default function AppointmentPage() {
               <Card className="border-orange-500/20">
                 <CardContent className="p-6">
                   <div className="text-center mb-8">
-                    <h1 className="text-3xl font-bold mb-4">Schedule a Meeting</h1>
+                    <h1 className="text-3xl font-bold mb-4">{data.form.title}</h1>
                     <p className="text-lg text-muted-foreground">
-                      Book a one-on-one consultation to discuss your infrastructure needs
+                      {data.form.subtitle}
                     </p>
                   </div>
 
                   <form onSubmit={handleSubmit} className="space-y-6">
                     <div className="space-y-4">
                       <div>
-                        <Label>Select Date</Label>
+                        <Label>{data.form.fields.date.label}</Label>
                         <Calendar
                           mode="single"
                           selected={date}
@@ -164,9 +157,9 @@ export default function AppointmentPage() {
                         />
                       </div>
                       <div>
-                        <Label>Select Time (PST)</Label>
+                        <Label>{data.form.fields.time.label}</Label>
                         <div className="grid grid-cols-2 sm:grid-cols-3 gap-2 mt-2">
-                          {timeSlots.map((slot) => (
+                          {data.timeSlots.map((slot) => (
                             <Button
                               key={slot}
                               type="button"
@@ -181,48 +174,48 @@ export default function AppointmentPage() {
                       </div>
 
                       <div>
-                        <Label htmlFor="name">Name</Label>
+                        <Label htmlFor="name">{data.form.fields.name.label}</Label>
                         <Input
                           id="name"
                           value={name}
                           onChange={(e) => setName(e.target.value)}
-                          required
+                          required={data.form.fields.name.required}
                           className="mt-1"
-                          placeholder="Your full name"
+                          placeholder={data.form.fields.name.placeholder}
                         />
                       </div>
                       <div>
-                        <Label htmlFor="email">Email</Label>
+                        <Label htmlFor="email">{data.form.fields.email.label}</Label>
                         <Input
                           id="email"
                           type="email"
                           value={email}
                           onChange={(e) => setEmail(e.target.value)}
-                          required
+                          required={data.form.fields.email.required}
                           className="mt-1"
-                          placeholder="your@email.com"
+                          placeholder={data.form.fields.email.placeholder}
                         />
                       </div>
                       <div>
-                        <Label htmlFor="company">Company</Label>
+                        <Label htmlFor="company">{data.form.fields.company.label}</Label>
                         <Input
                           id="company"
                           value={company}
                           onChange={(e) => setCompany(e.target.value)}
-                          required
+                          required={data.form.fields.company.required}
                           className="mt-1"
-                          placeholder="Your company name"
+                          placeholder={data.form.fields.company.placeholder}
                         />
                       </div>
                       <div>
-                        <Label htmlFor="topic">Meeting Topic</Label>
+                        <Label htmlFor="topic">{data.form.fields.topic.label}</Label>
                         <Input
                           id="topic"
                           value={topic}
                           onChange={(e) => setTopic(e.target.value)}
-                          required
+                          required={data.form.fields.topic.required}
                           className="mt-1"
-                          placeholder="Brief description of what you'd like to discuss"
+                          placeholder={data.form.fields.topic.placeholder}
                         />
                       </div>
                     </div>
@@ -232,11 +225,11 @@ export default function AppointmentPage() {
                       className="w-full h-12 text-lg bg-orange-500 hover:bg-orange-600"
                       disabled={isSubmitting}
                     >
-                      {isSubmitting ? "Sending request..." : "Request Appointment"}
+                      {isSubmitting ? data.form.button.loadingText : data.form.button.text}
                     </Button>
 
                     <p className="text-sm text-center text-muted-foreground mt-4">
-                      You'll receive a confirmation email once your appointment is scheduled
+                      {data.form.confirmation}
                     </p>
                   </form>
                 </CardContent>

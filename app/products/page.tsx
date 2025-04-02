@@ -1,7 +1,6 @@
 import Link from "next/link"
 import { Button } from "@/components/ui/button"
 import { Card, CardContent } from "@/components/ui/card"
-import { constructMetadata } from "@/lib/metadata"
 import { 
   Cloud, 
   Lock, 
@@ -19,15 +18,6 @@ import {
   LineChart,
   Users
 } from "lucide-react"
-
-export const metadata = constructMetadata({
-  title: "Products",
-  description: "Explore our comprehensive suite of enterprise-grade security and infrastructure products designed for modern businesses.",
-  openGraph: {
-    title: "Enterprise Security & Infrastructure Products | Tonmoy I&V",
-    description: "Explore our comprehensive suite of enterprise-grade security and infrastructure products.",
-  }
-})
 
 export default function Products() {
   return (

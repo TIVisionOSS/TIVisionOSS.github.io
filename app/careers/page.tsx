@@ -1,130 +1,46 @@
 "use client"
 
 import Link from "next/link"
+import { motion } from "framer-motion"
 import { Button } from "@/components/ui/button"
 import { Card, CardContent } from "@/components/ui/card"
-import { Briefcase, Code, FileText, Terminal, MapPin, Clock, Users, Shield, Globe, Server, Database, Bot } from "lucide-react"
-import { motion } from "framer-motion"
-import { constructMetadata } from "@/lib/metadata"
+import { Globe, Users, Shield, Server, MapPin, Clock } from "lucide-react"
+import data from "@/data/careers/index.json"
 
-export const metadata = constructMetadata({
-  title: "Careers",
-  description: "Join our team of innovators shaping the future of internet security and infrastructure. Explore career opportunities at Tonmoy I&V.",
-  openGraph: {
-    title: "Careers at Tonmoy Infrastructure & Vision",
-    description: "Join our team of innovators shaping the future of internet security and infrastructure.",
-  }
-})
+const icons = {
+  Globe,
+  Users,
+  Shield,
+  Server
+}
 
 export default function CareersPage() {
-  const departments = [
-    {
-      name: "Engineering",
-      positions: [
-        {
-          title: "Senior Security Engineer",
-          location: "San Francisco, CA",
-          type: "Full-time",
-          description: "Join our security team to help protect enterprise infrastructure from evolving cyber threats.",
-          requirements: [
-            "5+ years of security engineering experience",
-            "Experience with cloud security",
-            "Knowledge of network protocols",
-            "Strong coding skills in Python/Go"
-          ]
-        },
-        {
-          title: "Full Stack Developer",
-          location: "Remote",
-          type: "Full-time",
-          description: "Build and maintain enterprise-grade applications using modern web technologies.",
-          requirements: [
-            "3+ years of full stack development",
-            "Experience with React and Node.js",
-            "Database design expertise",
-            "CI/CD knowledge"
-          ]
-        }
-      ]
-    },
-    {
-      name: "Infrastructure",
-      positions: [
-        {
-          title: "Cloud Infrastructure Architect",
-          location: "New York, NY",
-          type: "Full-time",
-          description: "Design and implement scalable cloud infrastructure solutions for enterprise clients.",
-          requirements: [
-            "7+ years of cloud architecture",
-            "Multi-cloud experience",
-            "Infrastructure as Code",
-            "Performance optimization"
-          ]
-        }
-      ]
-    },
-    {
-      name: "Product",
-      positions: [
-        {
-          title: "Product Manager",
-          location: "San Francisco, CA",
-          type: "Full-time",
-          description: "Lead product strategy and development for our security solutions.",
-          requirements: [
-            "5+ years product management",
-            "Security product experience",
-            "Technical background",
-            "Strong communication skills"
-          ]
-        }
-      ]
-    }
-  ]
-
-  const benefits = [
-    {
-      icon: <Globe className="h-12 w-12 text-primary" />,
-      title: "Remote-First Culture",
-      description: "Work from anywhere in the world with our distributed team."
-    },
-    {
-      icon: <Users className="h-12 w-12 text-primary" />,
-      title: "Health & Wellness",
-      description: "Comprehensive health coverage and wellness programs for you and your family."
-    },
-    {
-      icon: <Shield className="h-12 w-12 text-primary" />,
-      title: "Learning & Development",
-      description: "Continuous learning opportunities and professional development budget."
-    },
-    {
-      icon: <Server className="h-12 w-12 text-primary" />,
-      title: "Latest Technology",
-      description: "Work with cutting-edge technology and tools in cloud and security."
-    }
-  ]
-
   return (
     <div className="flex flex-col">
-      <section className="py-20 md:py-32 bg-gradient-to-b from-primary/5 to-background">
-        <div className="container">
-          <div className="max-w-3xl mx-auto text-center">
+      <section className="py-24 relative overflow-hidden">
+        <div className="absolute inset-0 bg-gradient-to-b from-primary/10 via-primary/5 to-background pointer-events-none" />
+        <div className="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1552664730-d307ca884978?auto=format&fit=crop&q=80')] opacity-5 bg-cover bg-center" />
+        <div className="container relative">
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.5 }}
+            className="max-w-3xl mx-auto text-center"
+          >
             <h1 className="text-4xl font-bold tracking-tight sm:text-6xl">
-              Join Our Team
+              {data.hero.title}
             </h1>
             <p className="mt-6 text-xl text-muted-foreground">
-              Help us build the future of internet security and infrastructure. We're looking for talented individuals who share our passion for innovation and excellence.
+              {data.hero.description}
             </p>
-          </div>
+          </motion.div>
         </div>
       </section>
 
       <section className="py-20">
         <div className="container">
           <h2 className="text-3xl font-bold text-center mb-12">Open Positions</h2>
-          {departments.map((department, index) => (
+          {data.departments.map((department, index) => (
             <motion.div
               key={index}
               initial={{ opacity: 0, y: 20 }}
@@ -179,26 +95,29 @@ export default function CareersPage() {
         <div className="container">
           <h2 className="text-3xl font-bold text-center mb-12">Why Join Us?</h2>
           <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-4">
-            {benefits.map((benefit, index) => (
-              <motion.div
-                key={index}
-                initial={{ opacity: 0, y: 20 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ delay: index * 0.1 }}
-              >
-                <Card>
-                  <CardContent className="p-6 text-center">
-                    <div className="flex justify-center mb-4">
-                      {benefit.icon}
-                    </div>
-                    <h3 className="text-xl font-semibold mb-2">{benefit.title}</h3>
-                    <p className="text-muted-foreground">
-                      {benefit.description}
-                    </p>
-                  </CardContent>
-                </Card>
-              </motion.div>
-            ))}
+            {data.benefits.map((benefit, index) => {
+              const Icon = icons[benefit.icon as keyof typeof icons]
+              return (
+                <motion.div
+                  key={index}
+                  initial={{ opacity: 0, y: 20 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  transition={{ delay: index * 0.1 }}
+                >
+                  <Card>
+                    <CardContent className="p-6 text-center">
+                      <div className="flex justify-center mb-4">
+                        <Icon className="h-12 w-12 text-primary" />
+                      </div>
+                      <h3 className="text-xl font-semibold mb-2">{benefit.title}</h3>
+                      <p className="text-muted-foreground">
+                        {benefit.description}
+                      </p>
+                    </CardContent>
+                  </Card>
+                </motion.div>
+              )
+            })}
           </div>
         </div>
       </section>
@@ -206,12 +125,12 @@ export default function CareersPage() {
       <section className="py-20 bg-primary/5">
         <div className="container">
           <div className="max-w-3xl mx-auto text-center">
-            <h2 className="text-3xl font-bold mb-6">Don't see the right position?</h2>
+            <h2 className="text-3xl font-bold mb-6">{data.cta.title}</h2>
             <p className="text-xl text-muted-foreground mb-8">
-              We're always looking for talented individuals. Send us your resume and we'll keep you in mind for future opportunities.
+              {data.cta.description}
             </p>
-            <Link href="/contact">
-              <Button size="lg" className="cloudflare-button">Contact Us</Button>
+            <Link href={data.cta.button.link}>
+              <Button size="lg" className="cloudflare-button">{data.cta.button.text}</Button>
             </Link>
           </div>
         </div>

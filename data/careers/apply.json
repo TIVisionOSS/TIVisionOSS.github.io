@@ -1,0 +1,87 @@
+{
+  "hero": {
+    "title": "Apply for a Position",
+    "description": "Take the next step in your career and join our team of innovators."
+  },
+  "form": {
+    "fields": {
+      "firstName": {
+        "label": "First Name",
+        "placeholder": "Enter your first name",
+        "required": true
+      },
+      "lastName": {
+        "label": "Last Name",
+        "placeholder": "Enter your last name",
+        "required": true
+      },
+      "email": {
+        "label": "Email",
+        "type": "email",
+        "placeholder": "Enter your email",
+        "required": true
+      },
+      "phone": {
+        "label": "Phone",
+        "type": "tel",
+        "placeholder": "Enter your phone number",
+        "required": true
+      },
+      "position": {
+        "label": "Position",
+        "placeholder": "Position you're applying for",
+        "required": true
+      },
+      "location": {
+        "label": "Preferred Location",
+        "placeholder": "City, Country or Remote",
+        "required": true
+      },
+      "experience": {
+        "label": "Years of Experience",
+        "placeholder": "e.g., 5 years",
+        "required": true
+      },
+      "linkedin": {
+        "label": "LinkedIn Profile",
+        "type": "url",
+        "placeholder": "https://linkedin.com/in/...",
+        "required": false
+      },
+      "portfolio": {
+        "label": "Portfolio/Website",
+        "type": "url",
+        "placeholder": "https://...",
+        "required": false
+      },
+      "coverLetter": {
+        "label": "Cover Letter",
+        "placeholder": "Tell us about yourself and why you're interested in this position...",
+        "required": true
+      },
+      "resume": {
+        "label": "Resume/CV",
+        "description": "Upload your resume (PDF, DOC, DOCX)",
+        "required": true,
+        "accept": ".pdf,.doc,.docx"
+      }
+    },
+    "button": {
+      "text": "Submit Application",
+      "loadingText": "Submitting application..."
+    },
+    "privacyNotice": {
+      "text": "By submitting this application, you agree to our",
+      "links": [
+        {
+          "text": "Privacy Policy",
+          "href": "/privacy"
+        },
+        {
+          "text": "Terms of Service",
+          "href": "/terms"
+        }
+      ]
+    }
+  }
+}

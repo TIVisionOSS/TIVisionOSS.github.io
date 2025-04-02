@@ -1,17 +1,7 @@
 import Link from "next/link"
 import { Button } from "@/components/ui/button"
 import { Card, CardContent } from "@/components/ui/card"
-import { constructMetadata } from "@/lib/metadata"
 import { Shield, Globe, Lock, Zap, Server, Network, Cloud, Database, LineChart, Users, Bot, Workflow } from "lucide-react"
-
-export const metadata = constructMetadata({
-  title: "Solutions",
-  description: "Discover our enterprise solutions for security, infrastructure, and performance optimization tailored to your business needs.",
-  openGraph: {
-    title: "Enterprise Solutions | Tonmoy I&V",
-    description: "Discover our enterprise solutions for security, infrastructure, and performance optimization.",
-  }
-})
 
 export default function Solutions() {
   return (
