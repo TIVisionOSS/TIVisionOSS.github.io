@@ -20,14 +20,12 @@ export default function AboutPage() {
             <p className="mt-6 text-xl text-muted-foreground">
               {aboutData.hero.description}
             </p>
-            <div className="mt-8 flex justify-center gap-4">
-              {aboutData.hero.ctaButtons.map((button, index) => (
-                <Link key={index} href={button.href}>
-                  <Button size="lg" variant={button.variant as "default" | "outline"} className={button.variant === 'default' ? 'cloudflare-button' : 'cloudflare-outline-button'}>
-                    {button.text}
-                  </Button>
-                </Link>
-              ))}
+            <div className="mt-8 flex justify-center">
+              <Link href="/contact">
+                <Button size="lg" className="cloudflare-button">
+                  Contact Us
+                </Button>
+              </Link>
             </div>
           </div>
         </div>
@@ -49,8 +47,8 @@ export default function AboutPage() {
                     {aboutData.mission.description}
                   </p>
                   <ul className="space-y-2 mb-6 text-sm">
-                    {aboutData.mission.bullets.map((bullet, index) => (
-                      <li key={index} className="flex items-center">✓ {bullet}</li>
+                    {aboutData.mission.points.map((point, index) => (
+                      <li key={index} className="flex items-center">✓ {point}</li>
                     ))}
                   </ul>
                 </CardContent>
@@ -65,13 +63,13 @@ export default function AboutPage() {
               <Card>
                 <CardContent className="pt-6">
                   <Globe className="h-12 w-12 mb-4 text-primary" />
-                  <h3 className="text-xl font-semibold mb-2">{aboutData.globalPresence.title}</h3>
+                  <h3 className="text-xl font-semibold mb-2">{aboutData.presence.title}</h3>
                   <p className="text-muted-foreground mb-4">
-                    {aboutData.globalPresence.description}
+                    {aboutData.presence.description}
                   </p>
                   <ul className="space-y-2 mb-6 text-sm">
-                    {aboutData.globalPresence.bullets.map((bullet, index) => (
-                      <li key={index} className="flex items-center">✓ {bullet}</li>
+                    {aboutData.presence.points.map((point, index) => (
+                      <li key={index} className="flex items-center">✓ {point}</li>
                     ))}
                   </ul>
                 </CardContent>
@@ -203,9 +201,9 @@ export default function AboutPage() {
                       />
                     </div>
                     <h3 className="text-xl font-semibold text-center mb-1">{aboutData.leadership[0].name}</h3>
-                    <p className="text-muted-foreground text-center mb-4">{aboutData.leadership[0].title}</p>
+                    <p className="text-muted-foreground text-center mb-4">{aboutData.leadership[0].role}</p>
                     <p className="text-sm text-muted-foreground text-center">
-                      {aboutData.leadership[0].bio}
+                      {aboutData.leadership[0].description}
                     </p>
                   </CardContent>
                 </Card>
@@ -227,9 +225,9 @@ export default function AboutPage() {
                       />
                     </div>
                     <h3 className="text-xl font-semibold text-center mb-1">{aboutData.leadership[1].name}</h3>
-                    <p className="text-muted-foreground text-center mb-4">{aboutData.leadership[1].title}</p>
+                    <p className="text-muted-foreground text-center mb-4">{aboutData.leadership[1].role}</p>
                     <p className="text-sm text-muted-foreground text-center">
-                      {aboutData.leadership[1].bio}
+                      {aboutData.leadership[1].description}
                     </p>
                   </CardContent>
                 </Card>
@@ -242,12 +240,12 @@ export default function AboutPage() {
       <section className="py-20 bg-primary/5">
         <div className="container">
           <div className="max-w-3xl mx-auto text-center">
-            <h2 className="text-3xl font-bold mb-6">{aboutData.joinTeam.title}</h2>
+            <h2 className="text-3xl font-bold mb-6">{aboutData.careers.title}</h2>
             <p className="text-xl text-muted-foreground mb-8">
-              {aboutData.joinTeam.description}
+              {aboutData.careers.description}
             </p>
-            <Link href={aboutData.joinTeam.ctaButton.href}>
-              <Button size="lg" className="cloudflare-button">{aboutData.joinTeam.ctaButton.text}</Button>
+            <Link href={aboutData.careers.button.link}>
+              <Button size="lg" className="cloudflare-button">{aboutData.careers.button.text}</Button>
             </Link>
           </div>
         </div>
