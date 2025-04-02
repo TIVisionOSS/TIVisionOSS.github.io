@@ -34,12 +34,13 @@ export default function AiServicesPage() {
         <div className="container">
           <div className="grid gap-8 md:grid-cols-2">
             {data.features.map((feature, index) => {
-              const Icon = {
+              const iconMap = {
                 Bot,
                 Brain,
                 Workflow,
                 LineChart
-              }[feature.icon as keyof typeof feature.icon]
+              } as const;
+              const Icon = iconMap[feature.icon as keyof typeof iconMap];
               return (
                 <Card key={index}>
                   <CardContent className="pt-6">
