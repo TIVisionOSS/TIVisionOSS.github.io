@@ -34,12 +34,13 @@ export default function LoadBalancerPage() {
         <div className="container">
           <div className="grid gap-8 md:grid-cols-2">
             {data.features.map((feature, index) => {
-              const Icon = {
+              const icons = {
                 Server,
                 Shield,
                 Zap,
                 Network
-              }[feature.icon as keyof typeof feature.icon]
+              } as const
+              const Icon = icons[feature.icon as keyof typeof icons]
               return (
                 <Card key={index}>
                   <CardContent className="pt-6">
