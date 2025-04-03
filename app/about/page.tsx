@@ -4,7 +4,7 @@ import Link from "next/link"
 import Image from "next/image"
 import { Button } from "@/components/ui/button"
 import { Card, CardContent } from "@/components/ui/card"
-import { Shield, Globe, Users, Rocket, Award, Target } from "lucide-react"
+import { Shield, Globe, Users, Rocket, Award, Target, Linkedin, Twitter } from "lucide-react"
 import { motion } from "framer-motion"
 // import { constructMetadata } from "@/lib/metadata"
 import aboutData from "@/data/about.json"
@@ -128,6 +128,98 @@ export default function AboutPage() {
 
       <section className="py-20">
         <div className="container">
+          <h2 className="text-3xl font-bold text-center mb-12">Our Journey</h2>
+          <div className="max-w-4xl mx-auto">
+            <div className="relative">
+              <div className="absolute left-1/2 w-0.5 h-full bg-gradient-to-b from-orange-500 to-orange-600 -ml-px" />
+              <div className="space-y-8">
+                {aboutData.timeline.map((item, index) => (
+                  <motion.div
+                    key={index}
+                    initial={{ opacity: 0, x: index % 2 === 0 ? 20 : -20 }}
+                    animate={{ opacity: 1, x: 0 }}
+                    transition={{ delay: 0.1 * index }}
+                    className={`relative flex ${index % 2 === 0 ? 'flex-row' : 'flex-row-reverse'} items-center`}
+                  >
+                    <div className={`flex-1 ${index % 2 === 0 ? 'pr-8 text-right' : 'pl-8'}`}>
+                      <h3 className="text-xl font-semibold">{item.title}</h3>
+                      <p className="text-muted-foreground">{item.description}</p>
+                    </div>
+                    <div className="w-16 h-16 rounded-full bg-orange-500/10 flex items-center justify-center border-2 border-orange-500/20">
+                      <span className="text-orange-500 font-bold">{item.year}</span>
+                    </div>
+                  </motion.div>
+                ))}
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section className="py-20 bg-primary/5">
+        <div className="container">
+          <h2 className="text-3xl font-bold text-center mb-12">What Our Customers Say</h2>
+          <div className="grid gap-8 md:grid-cols-2">
+            {aboutData.testimonials.map((testimonial, index) => (
+              <motion.div
+                key={index}
+                initial={{ opacity: 0, y: 20 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ delay: 0.1 * index }}
+              >
+                <Card>
+                  <CardContent className="pt-6">
+                    <div className="flex items-center mb-4">
+                      <div className="relative w-16 h-16 mr-4">
+                        <Image
+                          src={testimonial.image}
+                          alt={testimonial.name}
+                          width={64}
+                          height={64}
+                          className="rounded-full w-full h-full object-cover"
+                        />
+                      </div>
+                      <div>
+                        <h3 className="font-semibold">{testimonial.name}</h3>
+                        <p className="text-sm text-muted-foreground">{testimonial.role}</p>
+                      </div>
+                    </div>
+                    <p className="italic">"{testimonial.quote}"</p>
+                  </CardContent>
+                </Card>
+              </motion.div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      <section className="py-20">
+        <div className="container">
+          <h2 className="text-3xl font-bold text-center mb-8">Our Team</h2>
+          <div className="grid grid-cols-2 md:grid-cols-3 gap-4 mb-12">
+            {aboutData.teamGallery.map((image, index) => (
+              <motion.div
+                key={index}
+                initial={{ opacity: 0, scale: 0.9 }}
+                animate={{ opacity: 1, scale: 1 }}
+                transition={{ delay: 0.1 * index }}
+                className="aspect-square overflow-hidden rounded-lg"
+              >
+                <Image
+                  src={image}
+                  alt={`Team member ${index + 1}`}
+                  width={400}
+                  height={400}
+                  className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
+                />
+              </motion.div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      <section className="py-20">
+        <div className="container">
           <h2 className="text-3xl font-bold text-center mb-12">Our Values</h2>
           <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
             <motion.div
@@ -205,9 +297,21 @@ export default function AboutPage() {
                     </div>
                     <h3 className="text-xl font-semibold text-center mb-1">{aboutData.leadership[0].name}</h3>
                     <p className="text-muted-foreground text-center mb-4">{aboutData.leadership[0].role}</p>
-                    <p className="text-sm text-muted-foreground text-center">
+                    <p className="text-sm text-muted-foreground text-center mb-4">
                       {aboutData.leadership[0].description}
                     </p>
+                    <div className="flex justify-center space-x-4">
+                      <Link href={aboutData.leadership[0].social.linkedin} target="_blank" rel="noopener noreferrer">
+                        <Button variant="ghost" size="icon">
+                          <Linkedin className="h-5 w-5" />
+                        </Button>
+                      </Link>
+                      <Link href={aboutData.leadership[0].social.twitter} target="_blank" rel="noopener noreferrer">
+                        <Button variant="ghost" size="icon">
+                          <Twitter className="h-5 w-5" />
+                        </Button>
+                      </Link>
+                    </div>
                   </CardContent>
                 </Card>
               </motion.div>
@@ -231,9 +335,21 @@ export default function AboutPage() {
                     </div>
                     <h3 className="text-xl font-semibold text-center mb-1">{aboutData.leadership[1].name}</h3>
                     <p className="text-muted-foreground text-center mb-4">{aboutData.leadership[1].role}</p>
-                    <p className="text-sm text-muted-foreground text-center">
+                    <p className="text-sm text-muted-foreground text-center mb-4">
                       {aboutData.leadership[1].description}
                     </p>
+                    <div className="flex justify-center space-x-4">
+                      <Link href={aboutData.leadership[1].social.linkedin} target="_blank" rel="noopener noreferrer">
+                        <Button variant="ghost" size="icon">
+                          <Linkedin className="h-5 w-5" />
+                        </Button>
+                      </Link>
+                      <Link href={aboutData.leadership[1].social.twitter} target="_blank" rel="noopener noreferrer">
+                        <Button variant="ghost" size="icon">
+                          <Twitter className="h-5 w-5" />
+                        </Button>
+                      </Link>
+                    </div>
                   </CardContent>
                 </Card>
               </motion.div>

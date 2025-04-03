@@ -59,13 +59,21 @@
       "name": "Eshan Roy",
       "role": "CEO & Founder",
       "description": "15+ years of experience in infrastructure and security. Previously led security initiatives at major tech companies.",
-      "image": "https://images.unsplash.com/photo-1556157382-97eda2d62296?auto=format&fit=crop&q=80"
+      "image": "https://images.unsplash.com/photo-1556157382-97eda2d62296?auto=format&fit=crop&q=80",
+      "social": {
+        "linkedin": "https://linkedin.com",
+        "twitter": "https://twitter.com"
+      }
     },
     {
       "name": "Sarah Chen",
       "role": "CTO",
       "description": "Expert in cloud infrastructure and distributed systems. Pioneered several breakthrough technologies in web security.",
-      "image": "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&q=80"
+      "image": "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&q=80",
+      "social": {
+        "linkedin": "https://linkedin.com",
+        "twitter": "https://twitter.com"
+      }
     }
   ],
   "careers": {
@@ -75,5 +83,46 @@
       "text": "View Open Positions",
       "link": "/careers"
     }
-  }
+  },
+  "timeline": [
+    {
+      "year": "2015",
+      "title": "Company Founded",
+      "description": "Started with a vision to revolutionize internet infrastructure"
+    },
+    {
+      "year": "2017",
+      "title": "First Data Center",
+      "description": "Launched our first data center in North America"
+    },
+    {
+      "year": "2019",
+      "title": "Global Expansion",
+      "description": "Expanded to 3 continents with 50+ edge locations"
+    },
+    {
+      "year": "2022",
+      "title": "10K Customers",
+      "description": "Reached milestone of serving 10,000+ customers worldwide"
+    }
+  ],
+  "testimonials": [
+    {
+      "quote": "Tonmoy's infrastructure solutions transformed our business operations and security posture.",
+      "name": "Alex Johnson",
+      "role": "CTO, TechCorp",
+      "image": "https://images.unsplash.com/photo-1560250097-0b93528c311a?auto=format&fit=crop&q=80"
+    },
+    {
+      "quote": "The best infrastructure partner we've worked with. Reliable, secure, and innovative.",
+      "name": "Maria Garcia",
+      "role": "Director of Engineering, StartupX",
+      "image": "https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?auto=format&fit=crop&q=80"
+    }
+  ],
+  "teamGallery": [
+    "https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&q=80",
+    "https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&fit=crop&q=80",
+    "https://images.unsplash.com/photo-1552664730-d307ca884978?auto=format&fit=crop&q=80"
+  ]
 }
