@@ -41,6 +41,14 @@ export default function AppointmentPage() {
       return
     }
 
+    if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) {
+      toast({
+        title: "Please enter a valid email address",
+        variant: "destructive",
+      })
+      return
+    }
+
     setIsSubmitting(true)
 
     try {
@@ -63,7 +71,11 @@ export default function AppointmentPage() {
         description: "We'll confirm your appointment shortly.",
       })
 
-      // Reset form
+      // Reset form with confirmation
+      toast({
+        title: "Form reset",
+        description: "Your information has been cleared",
+      })
       setDate(undefined)
       setTimeSlot("")
       setName("")
@@ -181,11 +193,15 @@ export default function AppointmentPage() {
                         <Input
                           id="name"
                           value={name}
-                          onChange={(e) => setName(e.target.value)}
+                          onChange={(e) => setName(e.target.value.slice(0, 50))}
                           required={data.form.fields.name.required}
                           className="mt-1"
                           placeholder={data.form.fields.name.placeholder}
+                          maxLength={50}
                         />
+                        <p className="text-xs text-muted-foreground mt-1">
+                          {name.length}/50 characters
+                        </p>
                       </div>
                       <div>
                         <Label htmlFor="email">{data.form.fields.email.label}</Label>
@@ -197,37 +213,57 @@ export default function AppointmentPage() {
                           required={data.form.fields.email.required}
                           className="mt-1"
                           placeholder={data.form.fields.email.placeholder}
+                          aria-invalid={!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email) && email.length > 0}
                         />
+                        {!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email) && email.length > 0 && (
+                          <p className="text-xs text-red-500 mt-1">
+                            Please enter a valid email address
+                          </p>
+                        )}
                       </div>
                       <div>
                         <Label htmlFor="company">{data.form.fields.company.label}</Label>
                         <Input
                           id="company"
                           value={company}
-                          onChange={(e) => setCompany(e.target.value)}
+                          onChange={(e) => setCompany(e.target.value.slice(0, 100))}
                           required={data.form.fields.company.required}
                           className="mt-1"
                           placeholder={data.form.fields.company.placeholder}
+                          maxLength={100}
                         />
+                        <p className="text-xs text-muted-foreground mt-1">
+                          {company.length}/100 characters
+                        </p>
                       </div>
                       <div>
                         <Label htmlFor="topic">{data.form.fields.topic.label}</Label>
                         <Input
                           id="topic"
                           value={topic}
-                          onChange={(e) => setTopic(e.target.value)}
+                          onChange={(e) => setTopic(e.target.value.slice(0, 200))}
                           required={data.form.fields.topic.required}
                           className="mt-1"
                           placeholder={data.form.fields.topic.placeholder}
+                          maxLength={200}
                         />
+                        <p className="text-xs text-muted-foreground mt-1">
+                          {topic.length}/200 characters
+                        </p>
                       </div>
                     </div>
 
-                    <Button 
-                      type="submit" 
-                      className="w-full h-12 text-lg bg-orange-500 hover:bg-orange-600"
+                    <Button
+                      type="submit"
+                      className="w-full h-12 text-lg bg-orange-500 hover:bg-orange-600 flex items-center justify-center gap-2"
                       disabled={isSubmitting}
                     >
+                      {isSubmitting && (
+                        <svg className="animate-spin -ml-1 mr-2 h-5 w-5 text-white" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
+                          <circle className="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" strokeWidth="4"></circle>
+                          <path className="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"></path>
+                        </svg>
+                      )}
                       {isSubmitting ? data.form.button.loadingText : data.form.button.text}
                     </Button>
 
