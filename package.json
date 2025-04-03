@@ -4,13 +4,13 @@
   "private": true,
   "homepage": "https://TIVisionOSS.github.io/",
   "scripts": {
-  "dev": "next dev",
-  "build": "next build",
-  "export": "next export",
-  "start": "next start",
-  "lint": "next lint",
-  "deploy": "next build && next export && gh-pages -d out"
-},
+    "dev": "next dev",
+    "build": "next build",
+    "export": "next export",
+    "start": "next start",
+    "lint": "next lint",
+    "deploy": "next build && next export && gh-pages -d out"
+  },
   "dependencies": {
     "@emailjs/browser": "^4.3.3",
     "@hookform/resolvers": "^3.9.0",
@@ -60,6 +60,7 @@
     "next-themes": "^0.3.0",
     "postcss": "8.5.3",
     "react": "18.2.0",
+    "react-countup": "^6.5.3",
     "react-day-picker": "^8.10.1",
     "react-dom": "18.2.0",
     "react-hook-form": "^7.53.0",
