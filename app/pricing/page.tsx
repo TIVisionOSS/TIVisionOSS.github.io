@@ -72,6 +72,10 @@ export default function PricingPage() {
             <p className="mt-6 text-xl text-muted-foreground">
               Choose the perfect plan for your business needs. All plans include our core security features.
             </p>
+            <div className="mt-8 flex justify-center gap-4">
+              <Button variant="default">Monthly</Button>
+              <Button variant="outline">Save 20% with Annual</Button>
+            </div>
           </div>
         </div>
       </section>
@@ -129,9 +133,64 @@ export default function PricingPage() {
         </div>
       </section>
 
+      <section className="py-20">
+        <div className="container">
+          <div className="max-w-4xl mx-auto">
+            <h2 className="text-3xl font-bold mb-8 text-center">Trusted by thousands of businesses</h2>
+            <div className="grid md:grid-cols-3 gap-8">
+              <div className="bg-background p-6 rounded-lg border">
+                <p className="text-muted-foreground mb-4">"Reduced our downtime by 99% after switching to their services."</p>
+                <div className="flex items-center gap-3">
+                  <div className="h-10 w-10 rounded-full bg-primary/10 flex items-center justify-center">JD</div>
+                  <div>
+                    <p className="font-medium">John Doe</p>
+                    <p className="text-sm text-muted-foreground">CTO, TechCorp</p>
+                  </div>
+                </div>
+              </div>
+              <div className="bg-background p-6 rounded-lg border">
+                <p className="text-muted-foreground mb-4">"The best security solution we've used, with excellent support."</p>
+                <div className="flex items-center gap-3">
+                  <div className="h-10 w-10 rounded-full bg-primary/10 flex items-center justify-center">AS</div>
+                  <div>
+                    <p className="font-medium">Alice Smith</p>
+                    <p className="text-sm text-muted-foreground">CEO, SecureApp</p>
+                  </div>
+                </div>
+              </div>
+              <div className="bg-background p-6 rounded-lg border">
+                <p className="text-muted-foreground mb-4">"Scaled with our business perfectly as we grew."</p>
+                <div className="flex items-center gap-3">
+                  <div className="h-10 w-10 rounded-full bg-primary/10 flex items-center justify-center">RJ</div>
+                  <div>
+                    <p className="font-medium">Robert Johnson</p>
+                    <p className="text-sm text-muted-foreground">DevOps Lead, GrowthCo</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       <section className="py-20 bg-primary/5">
         <div className="container">
           <div className="max-w-3xl mx-auto text-center">
+            <h2 className="text-3xl font-bold mb-6">Frequently Asked Questions</h2>
+            <div className="text-left space-y-6 mb-8">
+              <div>
+                <h3 className="font-semibold text-lg">Can I switch plans later?</h3>
+                <p className="text-muted-foreground mt-2">Yes, you can upgrade or downgrade at any time.</p>
+              </div>
+              <div>
+                <h3 className="font-semibold text-lg">Is there a free trial?</h3>
+                <p className="text-muted-foreground mt-2">We offer a 14-day free trial for all plans.</p>
+              </div>
+              <div>
+                <h3 className="font-semibold text-lg">What payment methods do you accept?</h3>
+                <p className="text-muted-foreground mt-2">We accept all major credit cards and PayPal.</p>
+              </div>
+            </div>
             <h2 className="text-3xl font-bold mb-6">Need a custom solution?</h2>
             <p className="text-xl text-muted-foreground mb-8">
               Contact our sales team to discuss your specific requirements and get a tailored quote.
