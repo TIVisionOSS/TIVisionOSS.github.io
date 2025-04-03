@@ -1,7 +1,7 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   output: "export",
-  distDir: "docs",
+  distDir: "out",
   basePath: "/TIVisionOSS.github.io",
   assetPrefix: "/TIVisionOSS.github.io/",
   images: {
