@@ -59,10 +59,11 @@ export default function ContactPage() {
 
   return (
     <div className="flex flex-col">
-      <section className="py-20 md:py-32 bg-gradient-to-b from-primary/5 to-background">
-        <div className="container">
+      <section className="relative py-24 md:py-36 bg-gradient-to-b from-primary/10 to-background overflow-hidden">
+        <div className="absolute inset-0 bg-[url('/grid.svg')] bg-center [mask-image:linear-gradient(180deg,white,transparent)]" />
+        <div className="container relative">
           <div className="max-w-3xl mx-auto text-center">
-            <h1 className="text-4xl font-bold tracking-tight sm:text-6xl">
+            <h1 className="text-4xl font-bold tracking-tight sm:text-6xl bg-clip-text text-transparent bg-gradient-to-r from-primary to-primary/70">
               {data.hero.title}
             </h1>
             <p className="mt-6 text-xl text-muted-foreground">
@@ -72,9 +73,9 @@ export default function ContactPage() {
         </div>
       </section>
 
-      <section className="py-20">
+      <section className="py-16 md:py-24">
         <div className="container">
-          <div className="grid gap-12 md:grid-cols-3">
+          <div className="grid gap-8 md:grid-cols-3">
             {data.contactCards.map((card, index) => {
               const Icon = {
                 Phone,
@@ -83,27 +84,37 @@ export default function ContactPage() {
               }[card.icon as "Phone" | "MessageSquare" | "Building"]
 
               return (
-                <Card key={index}>
-                  <CardContent className="pt-6">
-                    <Icon className="h-12 w-12 mb-4 text-primary" />
-                    <h3 className="text-xl font-semibold mb-2">{card.title}</h3>
+                <Card
+                  key={index}
+                  className="hover:shadow-lg transition-shadow duration-300"
+                >
+                  <CardContent className="pt-8 pb-6 px-6">
+                    <div className="flex items-center gap-4 mb-4">
+                      <div className="p-3 rounded-full bg-primary/10">
+                        <Icon className="h-6 w-6 text-primary" />
+                      </div>
+                      <h3 className="text-xl font-semibold">{card.title}</h3>
+                    </div>
                     <p className="text-muted-foreground mb-4">
                       {card.description}
                     </p>
-                    <p className="text-sm whitespace-pre-line">{card.contact}</p>
+                    <p className="text-sm whitespace-pre-line font-medium">{card.contact}</p>
                   </CardContent>
                 </Card>
               )
             })}
           </div>
 
-          <div className="mt-20">
-            <Card>
-              <CardContent className="p-8">
+          <div className="mt-16 md:mt-24">
+            <Card className="border-none shadow-xl">
+              <CardContent className="p-8 md:p-12">
                 <div className="max-w-2xl mx-auto">
-                  <h2 className="text-3xl font-bold text-center mb-8">{data.form.title}</h2>
+                  <div className="text-center mb-10">
+                    <h2 className="text-3xl font-bold mb-2">{data.form.title}</h2>
+                    <p className="text-muted-foreground">We typically respond within 24 hours</p>
+                  </div>
                   <form onSubmit={handleSubmit} className="space-y-6">
-                    <div>
+                    <div className="space-y-2">
                       <Label htmlFor="name">{data.form.fields.name.label}</Label>
                       <Input
                         id="name"
@@ -115,7 +126,7 @@ export default function ContactPage() {
                         required={data.form.fields.name.required}
                       />
                     </div>
-                    <div>
+                    <div className="space-y-2">
                       <Label htmlFor="email">{data.form.fields.email.label}</Label>
                       <Input
                         id="email"
@@ -127,7 +138,7 @@ export default function ContactPage() {
                         required={data.form.fields.email.required}
                       />
                     </div>
-                    <div>
+                    <div className="space-y-2">
                       <Label htmlFor="company">{data.form.fields.company.label}</Label>
                       <Input
                         id="company"
@@ -139,7 +150,7 @@ export default function ContactPage() {
                         required={data.form.fields.company.required}
                       />
                     </div>
-                    <div>
+                    <div className="space-y-2">
                       <Label htmlFor="message">{data.form.fields.message.label}</Label>
                       <textarea
                         id="message"
@@ -150,12 +161,22 @@ export default function ContactPage() {
                         required={data.form.fields.message.required}
                       />
                     </div>
-                    <Button 
-                      type="submit" 
-                      className="w-full cloudflare-button"
+                    <Button
+                      type="submit"
+                      className="w-full h-12 text-lg transition-all duration-300 hover:shadow-lg"
                       disabled={isSubmitting}
                     >
-                      {isSubmitting ? "Sending..." : data.form.button.text}
+                      {isSubmitting ? (
+                        <span className="flex items-center gap-2">
+                          <svg className="animate-spin h-5 w-5" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
+                            <circle className="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" strokeWidth="4"></circle>
+                            <path className="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"></path>
+                          </svg>
+                          Sending...
+                        </span>
+                      ) : (
+                        data.form.button.text
+                      )}
                     </Button>
                   </form>
                 </div>
